@@ -14,6 +14,9 @@ Esta auditoria fundamenta-se nas diretrizes internacionais de acessibilidade **W
 * ### 📸 Evidência do Erro
 <img width="667" height="210" alt="Captura de tela 2026-07-12 105824" src="https://github.com/user-attachments/assets/c1e2fb83-1ddc-4bfd-8048-368da1ab04bb" />
 
+**Solução Proposta:**
+O time de desenvolvimento do G1 deve adicionar o atributo `alt` preenchido com uma descrição clara e concisa dentro da tag da imagem. Exemplo de correção: `<img src="link-da-imagem.jpg" alt="Mapa do Brasil mostrando o aquecimento das águas devido ao fenômeno El Niño.">`.
+
 
   
 ### 🔍 Bug 02: Escudo de Seleção sem Texto Alternativo no Código
@@ -24,6 +27,9 @@ Esta auditoria fundamenta-se nas diretrizes internacionais de acessibilidade **W
 * **Solução Proposta:** Adicionar a tag `alt="Escudo da Argentina"` ou aplicar o atributo vazio `alt=""` caso a sigla "ARG" logo ao lado seja considerada suficiente para o contexto.
 *  ### 📸 Evidência do Erro
 <img width="896" height="707" alt="Captura de tela 2026-07-12 110135" src="https://github.com/user-attachments/assets/4b97a04b-a78a-4261-a3cf-2c22abec5f2e" />
+
+**Solução Proposta:**
+Como as siglas "ARG" e "NOR" já aparecem escritas em texto logo ao lado dos escudos, as imagens das bandeiras são consideradas decorativas (redundantes). A melhor prática de desenvolvimento é adicionar o atributo alt vazio (`alt=""`). Dessa forma, o leitor de tela ignora as imagens e lê apenas o texto das siglas, evitando que o usuário cego ouça informações repetidas.
 
 
 *   **Infração Legal:** Desconformidade com o Art. 63 da LBI por criar barreiras digitais no acesso à informação e comunicação.
