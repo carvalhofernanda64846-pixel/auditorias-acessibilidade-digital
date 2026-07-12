@@ -6,8 +6,7 @@
 *   **Ferramenta Utilizada:** Axe DevTools (Painel do Desenvolvedor)
 
 ## ⚖️ Conformidade e Base Legal
-Esta auditoria fundamenta-se nas diretrizes internacionais de acessibilidade **WCAG 2.1 (Web Content Accessibility Guidelines)** e está em conformidade com o **Artigo 63 da Lei Brasileira de Inclusão (Lei nº 13.146/2015)**, que obriga a garantia de acessibilidade em páginas web de empresas que operam no Brasil.
-
+Esta auditoria fundamenta-se nas diretrizes internacionais de acessibilidade **WCAG 2.1 (Web Content Accessibility Guidelines)** e no modelo nacional **eMAG (Modelo de Acessibilidade em Governo Eletrônico)**, em total conformidade com o **Artigo 63 da Lei Brasileira de Inclusão (Lei nº 13.146/2015)**.
 ---
 
 ## 👾 Bugs Identificados
