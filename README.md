@@ -19,7 +19,7 @@ Este repositório está sendo alimentado diariamente com laudos técnicos práti
   `Exemplo: <img src="foto.jpg" alt="Satélite mostrando o planeta Terra com manchas de calor nos oceanos representando o El Niño.">`
 
 ### 🔍 Bug 02: Escudo de Seleção sem Texto Alternativo no Código
-* **O Problema:** Na seção de esportes do G1, o gráfico que compõe a bandeira/escudo da Argentina foi inserido sem a tag descritiva no sistema.
+* **O Problema:** Na seção de esportes do G1, o gráfico que compõe a bandeira/escudo da Argentina e noroega foi inserido sem a tag descritiva no sistema.
 * **Linha de Código com Defeito Detectada:** `<img class="crest" src="https://globo.com" loading="lazy">`
 * **Impacto no Usuário:** O leitor de tela falha ao anunciar a identidade visual do time envolvido na notícia porque o programador não inseriu o atributo de acessibilidade.
 * **Diretriz Violada:** Critério de Sucesso WCAG 1.1.1 (Conteúdo Não Textual - Nível A).
