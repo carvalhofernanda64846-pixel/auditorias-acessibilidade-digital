@@ -2,6 +2,9 @@
 * **Tipo:** Web Desktop
 * **Ferramenta utilizada:** WAVE Evaluation Tool & Inspeção de Código
 * **Foco do Teste:** Conteúdo Não Textual e Hierarquia
+  
+* ## ⚖️ Conformidade e Base Legal
+Esta auditoria fundamenta-se nas diretrizes internacionais de acessibilidade **WCAG 2.1 (Web Content Accessibility Guidelines)** e no modelo nacional **eMAG (Modelo de Acessibilidade em Governo Eletrônico)**. O laudo está em total conformidade com o **Artigo 63 da Lei Brasileira de Inclusão (Lei nº 13.146/2015)**, que estabelece a obrigatoriedade de acessibilidade nos sítios da internet mantidos por empresas com sede ou representação comercial no País.
 
 ### 🔍 Bug 01: Imagem de Notícia sem Texto Alternativo (Falta de Atributo ALT)
 * **O Problema:** Na página inicial do Portal G1, a imagem que ilustra a notícia *"Seria possível 'desarmar' um super El Niño..."* foi publicada sem a tag descritiva de acessibilidade.
