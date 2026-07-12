@@ -55,7 +55,7 @@ Anuncia barreiras para usuários daltônicos ou usuários com restrições visua
 2. Clicar na categoria correspondente para expandir o erro.
 
 ### 💻 Elemento Identificado (Código):
-**Tag HTML afetada:** <a class="nav-header-link" href="...">...</a>``
+**Tag HTML afetada:** `<a class="nav-header-link" href="...">...</a>`
 
 ### ⚖️ Diretrizes e Leis Violadas
 * **WCAG 2.1 - Critério de Sucesso 1.4.1:** Uso de Cores (Nível A).
