@@ -8,4 +8,4 @@ Este repositório está sendo alimentado diariamente com laudos técnicos práti
 
 *   [📰 Auditoria 01 — Portal G1 (Ferramenta WAVE)](./G1/README.md)
 *   [📦 Auditoria 02 — Amazon Brasil (Ferramenta Axe DevTools)](./amazon/README.md)
-*
+
