@@ -82,7 +82,7 @@ A árvore de acessibilidade do navegador é corrompida. Quando um software de le
 2. Expandir o item para identificar a tag inválida que foi colocada incorretamente dentro da lista.
 
 ### 💻 Elemento Identificado (Código):
-**Estrutura identificada:** <ul class="nav-header-list"> <div class="invalid-child-element">...</div> </ul>
+**Estrutura identificada:** `<ul class="nav-header-list"> <div class="invalid-child-element">...</div> </ul>`
 
 ### ⚖️ Diretrizes e Leis Violadas
 * **WCAG 2.1 - Critério de Sucesso 1.3.1:** Informações e Relações (Nível A).
@@ -114,7 +114,7 @@ Usuários que dependem estritamente da navegação por teclado ficam impossibili
 3. Verificar que o foco pula por cima do quadrado rolável, impossibilitando o scroll horizontal através das setas direcionais.
 
 ### 💻 Elemento Identificado (Código):
-**Tag HTML identificada:** <div class="andes-carousel-free" id="_r_1_"> ... </div>
+**Tag HTML identificada:** `<div class="andes-carousel-free" id="_r_1_"> ... </div>`
 
 ### ⚖️ Diretrizes e Leis Violadas
 * **WCAG 2.1 - Critério de Sucesso 2.1.1:** Teclado (Nível A).
