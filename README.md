@@ -17,7 +17,7 @@ Este repositório está sendo alimentado diariamente com laudos técnicos práti
 * **Diretriz Violada:** Critério de Sucesso WCAG 1.1.1 (Conteúdo Não Textual - Nível A).
 * **Solução Proposta:** Adicionar o atributo `alt` descrevendo a foto.
 * ### 📸 Evidência do Erro
-* ![Print do El Niño](print-noticias-g1.png)
+*![print-el-nino](print-noticias-g1.png)
   `Exemplo: <img src="foto.jpg" alt="Satélite mostrando o planeta Terra com manchas de calor nos oceanos representando o El Niño.">`
 
 ### 🔍 Bug 02: Escudo de Seleção sem Texto Alternativo no Código
