@@ -25,3 +25,6 @@ Esta auditoria fundamenta-se nas diretrizes internacionais de acessibilidade **W
 *  ### 📸 Evidência do Erro
 <img width="896" height="707" alt="Captura de tela 2026-07-12 110135" src="https://github.com/user-attachments/assets/4b97a04b-a78a-4261-a3cf-2c22abec5f2e" />
 
+*   **Infração Legal:** Desconformidade com o Art. 63 da LBI por criar barreiras digitais no acesso à informação e comunicação.
+
+
