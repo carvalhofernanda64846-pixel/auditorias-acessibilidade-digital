@@ -22,7 +22,7 @@ O campo de busca principal da Amazon Brasil está configurado com o atributo `ar
 
 **Evidência do Erro (Print do Axe DevTools):**
 
-*<img width="1874" height="812" alt="Captura de tela 2026-07-12 122123" src="https://github.com/user-attachments/assets/be16600b-f17e-4563-95b2-946d7b9dcf6b" />
+<img width="1874" height="812" alt="Captura de tela 2026-07-12 122123" src="https://github.com/user-attachments/assets/be16600b-f17e-4563-95b2-946d7b9dcf6b" />
 
 **Solução Proposta:**
 O time de engenharia de software da Amazon deve remover completamente o atributo `aria-expanded="false"` da tag `<input>` da barra de pesquisa, mantendo apenas os atributos padrão suportados para campos de texto.
