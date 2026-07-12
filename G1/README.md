@@ -15,7 +15,7 @@ Esta auditoria fundamenta-se nas diretrizes internacionais de acessibilidade **W
 <img width="667" height="210" alt="Captura de tela 2026-07-12 105824" src="https://github.com/user-attachments/assets/c1e2fb83-1ddc-4bfd-8048-368da1ab04bb" />
 
 **Solução Proposta:**
-O time de desenvolvimento do G1 deve adicionar o atributo `alt` preenchido com uma descrição clara e concisa dentro da tag da imagem. Exemplo de correção: `<img src="link-da-imagem.jpg" alt="Mapa do Brasil mostrando o aquecimento das águas devido ao fenômeno El Niño.">`.
+O time de desenvolvimento do G1 deve adicionar o atributo `alt` preenchido com uma descrição clara e concisa dentro da tag da imagem. Exemplo de correção: `<img src="link-da-imagem.jpg" alt="Mapa do Brasil mostrando o aquecimento das águas devido ao fenômeno El Niño.
 
 
   
