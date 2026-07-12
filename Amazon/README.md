@@ -21,6 +21,7 @@ Esta auditoria fundamenta-se nas diretrizes internacionais de acessibilidade **W
 O campo de busca principal da Amazon Brasil está configurado com o atributo `aria-expanded="false"`. Na especificação técnica do W3C, este atributo serve exclusivamente para indicar se um elemento expansível (como um menu ou sanfona/accordion) está aberto ou fechado. Como a barra de pesquisa possui a função de entrada de texto pura (`role="searchbox"`), o uso desse atributo é inválido. Isso confunde os leitores de tela (como NVDA ou JAWS), que anunciam ao usuário cego que há um menu para expandir ali, gerando uma quebra de expectativa e uma navegação confusa.
 
 **Evidência do Erro (Print do Axe DevTools):**
+
 *<img width="1874" height="812" alt="Captura de tela 2026-07-12 122123" src="https://github.com/user-attachments/assets/be16600b-f17e-4563-95b2-946d7b9dcf6b" />
 
 **Solução Proposta:**
