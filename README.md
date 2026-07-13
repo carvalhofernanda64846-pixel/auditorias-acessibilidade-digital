@@ -7,7 +7,8 @@ Este repositório está sendo alimentado diariamente com laudos técnicos práti
 ## 🚀 Laudos Técnicos Disponíveis:
 
 * [📰 Auditoria 01 — Portal G1 (Ferramenta WAVE)](./G1/README.md)
-* [📦 Auditoria 02 — Amazon Brasil (Ferramenta Axe DevTools)](./amazon/README.md)
-* [📦 Auditoria 03 — Mercado Livre (Ferramenta Axe DevTools)](./Mercado%20Livre/README.md)
+* [📰 Auditoria 02 — Itaú (Ferramenta WAVE)](./Itaú/README.md)
+* [📦 Auditoria 03 — Amazon Brasil (Ferramenta Axe DevTools)](./amazon/README.md)
+* [📦 Auditoria 04 — Mercado Livre (Ferramenta Axe DevTools)](./Mercado%20Livre/README.md)
 
 
