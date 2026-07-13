@@ -19,8 +19,10 @@ A análise foi conduzida através de métodos manuais e automatizados:
 ### ❌ Bug 02: Botões sem descrição acessível (Empty Buttons)
 **Descrição:** Foram identificados 4 botões interativos (`ot-floating-button`) que não possuem conteúdo textual ou rótulos, sendo classificados como "Empty buttons". Estes elementos servem para ações de suporte/chat.
 
-**Evidência Técnica:**
+**Evidência:📸**
+<img width="1879" height="623" alt="Captura de tela 2026-07-13 082755" src="https://github.com/user-attachments/assets/8586d9b2-271b-4a08-82ae-0e57410cccd9" />
 
+**Evidência Técnica:**
 html
 `<button type="button" class="ot-floating-button_open"></button>
 <button type="button" class="ot-floating-button_close"></button>`
@@ -30,7 +32,7 @@ Diretrizes Violadas: WCAG 2.1 - Critério de Sucesso 4.1.2 (Nome, Função, Valo
 Sugestão de Melhoria: Adicionar o atributo aria-label para fornecer o contexto da ação.
 
 Exemplo de correção:
-<button type="button" class="ot-floating-button_open" aria-label="Abrir chat de ajuda"></button>
+`<button type="button" class="ot-floating-button_open" aria-label="Abrir chat de ajuda"></button>`
 
 4. Conclusão
 ​A auditoria revelou que, embora o site apresente uma estrutura base sólida, existem falhas críticas de acessibilidade que podem ser corrigidas com ajustes pontuais de semântica no código (HTML) e organização de foco. A implementação dessas melhorias garantirá uma experiência mais inclusiva para todos os usuários do Banco Itaú.
