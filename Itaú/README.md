@@ -20,6 +20,7 @@ A análise foi conduzida através de métodos manuais e automatizados:
 **Descrição:** Foram identificados 4 botões interativos (`ot-floating-button`) que não possuem conteúdo textual ou rótulos, sendo classificados como "Empty buttons". Estes elementos servem para ações de suporte/chat.
 
 **Evidência:📸**
+
 <img width="1879" height="623" alt="Captura de tela 2026-07-13 082755" src="https://github.com/user-attachments/assets/8586d9b2-271b-4a08-82ae-0e57410cccd9" />
 
 **Evidência Técnica:**
