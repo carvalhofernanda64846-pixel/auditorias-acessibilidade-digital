@@ -30,7 +30,9 @@ html
 <button type="button" class="ot-floating-button_close"></button>`
 
 Impacto: Leitores de tela não conseguem identificar a função desses botões, anunciando apenas "Botão", o que impede a interação do usuário.
+
 Diretrizes Violadas: WCAG 2.1 - Critério de Sucesso 4.1.2 (Nome, Função, Valor - Nível A).
+
 Sugestão de Melhoria: Adicionar o atributo aria-label para fornecer o contexto da ação.
 
 Exemplo de correção:
