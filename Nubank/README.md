@@ -24,9 +24,10 @@ Esta auditoria teve como objetivo avaliar a conformidade de acessibilidade do po
 ## 3. Barreiras Visuais (Contraste e Legibilidade)
 
 *   **Norma infringida:** **WCAG 2.1 - Critério 1.4.3 (Contraste Mínimo)** e **Critério 2.4.7 (Foco Visível)**. O contraste insuficiente impede a leitura por pessoas com baixa visão, e a falta de foco visível impede a navegação por teclado.
+   
 *   **Print da evidência:**
     
-    <img width="1888" height="814" alt="Captura de tela 2026-07-15 174515" src="https://github.com/user-attachments/assets/2cb00ae6-a8a4-4714-a7e5-6df5220e02f0" />
+  <img width="1888" height="814" alt="Captura de tela 2026-07-15 174515" src="https://github.com/user-attachments/assets/2cb00ae6-a8a4-4714-a7e5-6df5220e02f0" />
 
 *   **Descrição do achado:** O design utiliza a cor roxa primária com fontes de baixo contraste. Adicionalmente, durante o teste manual com a tecla Tab, o indicador de foco torna-se imperceptível ao passar sobre elementos roxos, impedindo que o usuário saiba em qual botão está posicionado.
 
