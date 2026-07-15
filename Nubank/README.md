@@ -11,13 +11,15 @@ Esta auditoria teve como objetivo avaliar a conformidade de acessibilidade do po
 
 ## 2. Barreiras Estruturais (Semântica e Código)
 
+A auditoria automatizada realizada com a ferramenta axe-core identificou um total de 14 problemas de acessibilidade, classificados como barreiras técnicas na semântica e na estrutura do código.
+
 **Norma infringida:** **WCAG 2.1 - Critério 4.1.2 (Nome, Função, Valor)**. Este critério exige que componentes de interface tenham nomes acessíveis para serem interpretados corretamente por tecnologias assistivas.
   
 *   **Print da evidência:**
   
   <img width="1898" height="814" alt="Captura de tela 2026-07-15 172751" src="https://github.com/user-attachments/assets/4d3f2170-fb3d-4bf9-984f-399ab9cdd67f" />
 
-**Descrição do achado:** Identifiquei botões e links que não possuem descrição textual (nome acessível). Na prática, um usuário de leitor de tela ouve apenas "botão", sem saber qual a sua função (ex: "Transferir PIX").
+**Descrição do achado:** Foram identificadas 14 violações que impactam a interpretação por tecnologias assistivas. Estas falhas englobam desde a falta de descrição textual em elementos interativos (como botões que são lidos apenas como 'botão' pelo leitor de tela), até erros no uso de atributos ARIA e na estrutura hierárquica do código (ex: elementos semânticos mal organizados). Esses pontos impedem uma navegação fluida e intuitiva para usuários com deficiência.
 
 ---
 
@@ -43,5 +45,5 @@ Esta auditoria teve como objetivo avaliar a conformidade de acessibilidade do po
 ## 💡 Sugestões de Melhoria
 
 1.  **Semântica:** Adicionar atributos `aria-label` descritivos em todos os botões e links que utilizam apenas ícones.
-3.  **Contraste:** Revisar a paleta de cores para garantir a relação mínima de 4.5:1 exigida pela WCAG 2.1.
-4.  **Foco:** Implementar um contorno (outline) de foco com alto contraste para o indicador de teclado, garantindo visibilidade sobre o fundo roxo da marca.
+2.  **Contraste:** Revisar a paleta de cores para garantir a relação mínima de 4.5:1 exigida pela WCAG 2.1.
+3.  **Foco:** Implementar um contorno (outline) de foco com alto contraste para o indicador de teclado, garantindo visibilidade sobre o fundo roxo da marca.
