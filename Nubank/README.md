@@ -13,13 +13,13 @@ Esta auditoria teve como objetivo avaliar a conformidade de acessibilidade do po
 
 ## 2. Barreiras Estruturais (Semântica e Código)
 
-*   **Norma infringida:** **WCAG 2.1 - Critério 4.1.2 (Nome, Função, Valor)**. Este critério exige que componentes de interface tenham nomes acessíveis para serem interpretados corretamente por tecnologias assistivas.
-*   
+**Norma infringida:** **WCAG 2.1 - Critério 4.1.2 (Nome, Função, Valor)**. Este critério exige que componentes de interface tenham nomes acessíveis para serem interpretados corretamente por tecnologias assistivas.
+  
 *   **Print da evidência:**
-*   
-    <img width="1898" height="814" alt="Captura de tela 2026-07-15 172751" src="https://github.com/user-attachments/assets/4d3f2170-fb3d-4bf9-984f-399ab9cdd67f" />
+  
+  <img width="1898" height="814" alt="Captura de tela 2026-07-15 172751" src="https://github.com/user-attachments/assets/4d3f2170-fb3d-4bf9-984f-399ab9cdd67f" />
 
-*   **Descrição do achado:** Identifiquei botões e links que não possuem descrição textual (nome acessível). Na prática, um usuário de leitor de tela ouve apenas "botão", sem saber qual a sua função (ex: "Transferir PIX").
+**Descrição do achado:** Identifiquei botões e links que não possuem descrição textual (nome acessível). Na prática, um usuário de leitor de tela ouve apenas "botão", sem saber qual a sua função (ex: "Transferir PIX").
 
 ---
 
