@@ -14,6 +14,7 @@ A análise foi conduzida através de métodos manuais e automatizados:
 **Descrição:** Ao utilizar a tecla `Tab` para navegar na página, o foco ignora seções inteiras de benefícios e ofertas (cards do Uniclass). O fluxo de navegação é interrompido, tornando o conteúdo inacessível para usuários que não utilizam mouse.
 **Impacto:** Usuários com deficiência motora ou visual são excluídos de informações importantes sobre produtos e vantagens do banco.
 **Diretrizes Violadas:** WCAG 2.1 - Critério de Sucesso 2.4.3 (Ordem de Foco - Nível A).
+
 **Sugestão de Melhoria:** Revisar a hierarquia do DOM e garantir que todos os elementos interativos possuam `tabindex="0"` ou estejam posicionados corretamente na ordem lógica da página.
 
 ### ❌ Bug 02: Botões sem descrição acessível (Empty Buttons)
