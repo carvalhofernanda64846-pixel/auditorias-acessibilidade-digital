@@ -47,3 +47,33 @@ A auditoria automatizada realizada com a ferramenta axe-core identificou um tota
 1.  **Semântica:** Adicionar atributos `aria-label` descritivos em todos os botões e links que utilizam apenas ícones.
 2.  **Contraste:** Revisar a paleta de cores para garantir a relação mínima de 4.5:1 exigida pela WCAG 2.1.
 3.  **Foco:** Implementar um contorno (outline) de foco com alto contraste para o indicador de teclado, garantindo visibilidade sobre o fundo roxo da marca.
+
+## 5. 🚀 Automação de Testes de Acessibilidade
+
+Para garantir a conformidade contínua, implementei testes automatizados utilizando **Cypress** e **cypress-axe**.
+
+#### 🛠️ Tecnologias Adicionadas
+*   **Cypress**: Framework para automação E2E.
+*   **cypress-axe**: Plugin para auditoria de acessibilidade baseada nas diretrizes **WCAG (Web Content Accessibility Guidelines)**.
+
+#### 📊 Relatório de Auditoria
+Foram identificadas 48 violações na página inicial. Abaixo, a análise técnica das regras infringidas:
+
+| Categoria | Ocorrências | Regra WCAG Infringida | Sugestão de Melhoria |
+| :--- | :---: | :--- | :--- |
+| `region` | 34 | WCAG 1.3.1 | Adicionar landmarks (ex: <main>) |
+| `aria-prohibited` | 4 | WCAG 4.1.2 | Remover atributos ARIA inválidos |
+| `heading-order` | 4 | WCAG 1.3.1 | Ajustar hierarquia de títulos |
+| `link-name` | 4 | WCAG 2.4.4 | Adicionar descrição (aria-label) |
+| `required-children` | 3 | WCAG 1.3.1 | Corrigir estrutura de elementos |
+| `aria-allowed` | 1 | WCAG 4.1.2 | Ajustar roles permitidas |
+| `command-name` | 1 | WCAG 4.1.2 | Nomear botões/comandos |
+| `progressbar` | 1 | WCAG 1.3.1 | Adicionar rótulo em progressbar |
+| `role-conflict` | 1 | WCAG 4.1.2 | Corrigir conflitos de role |
+
+> **Nota Técnica:** A alta incidência da regra `region` indica uma falha na estrutura semântica global, cuja correção trará um impacto positivo imediato para usuários de leitores de tela.
+
+*Evidência da execução dos testes automatizados via Cypress/axe
+
+<img width="1790" height="746" alt="Captura de tela 2026-07-16 113810" src="https://github.com/user-attachments/assets/5a43c607-4132-4849-b64c-344287b958c3" />
+
