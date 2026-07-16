@@ -73,7 +73,7 @@ Foram identificadas 48 violações na página inicial. Abaixo, a análise técni
 
 > **Nota Técnica:** A alta incidência da regra `region` indica uma falha na estrutura semântica global, cuja correção trará um impacto positivo imediato para usuários de leitores de tela.
 
-*Evidência da execução dos testes automatizados via Cypress/axe
+**Evidência da execução dos testes automatizados via Cypress/axe
 
 <img width="1790" height="746" alt="Captura de tela 2026-07-16 113810" src="https://github.com/user-attachments/assets/5a43c607-4132-4849-b64c-344287b958c3" />
 
