@@ -55,6 +55,14 @@ Para garantir a conformidade contínua, implementei testes automatizados utiliza
 #### 🛠️ Tecnologias Adicionadas
 *   **Cypress**: Framework para automação E2E.
 *   **cypress-axe**: Plugin para auditoria de acessibilidade baseada nas diretrizes **WCAG (Web Content Accessibility Guidelines)**.
+*   #### ⚙️ Como Rodar o Projeto
+
+Para executar os testes de acessibilidade em sua máquina, siga os passos abaixo:
+
+1. **Pré-requisitos:** Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
+2. **Instalar Dependências:** No terminal, dentro da pasta do projeto, execute:
+   ```bash
+   npm install
 
 #### 📊 Relatório de Auditoria
 Foram identificadas 48 violações na página inicial. Abaixo, a análise técnica das regras infringidas:
