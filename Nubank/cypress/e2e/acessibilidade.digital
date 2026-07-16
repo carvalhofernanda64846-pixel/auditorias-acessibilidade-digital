@@ -1,0 +1,16 @@
+describe('Teste de Acessibilidade - Nubank', () => {
+  it('Deve verificar a acessibilidade e listar os erros no console', () => {
+    cy.visit('https://nubank.com.br');
+    cy.injectAxe();
+    
+    // O comando abaixo diz: "CheckA11y, faça a varredura, mas não pare o teste (false),
+    // e se achar erros, execute a função de imprimir no console para mim"
+    cy.checkA11y(null, null, (violations) => {
+      violations.forEach((violation) => {
+        // Isso vai jogar o erro detalhado direto no F12 -> Console
+        console.log('Violação encontrada:', violation.id);
+        console.table(violation.nodes); // Tabela com os elementos problemáticos
+      });
+    }, false); 
+  });
+});
