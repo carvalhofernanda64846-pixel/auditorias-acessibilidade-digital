@@ -61,7 +61,7 @@ Foram identificadas 48 violações na página inicial. Abaixo, a análise técni
 
 | Categoria | Ocorrências | Regra WCAG Infringida | Sugestão de Melhoria |
 | :--- | :---: | :--- | :--- |
-| `region` | 34 | WCAG 1.3.1 | Adicionar landmarks (ex: <main>) |
+| `region` | 34 | WCAG 1.3.1 | Adicionar landmarks (ex: `<main>`) |
 | `aria-prohibited` | 4 | WCAG 4.1.2 | Remover atributos ARIA inválidos |
 | `heading-order` | 4 | WCAG 1.3.1 | Ajustar hierarquia de títulos |
 | `link-name` | 4 | WCAG 2.4.4 | Adicionar descrição (aria-label) |
