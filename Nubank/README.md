@@ -52,7 +52,7 @@ A auditoria automatizada realizada com a ferramenta axe-core identificou um tota
 
 Para garantir a conformidade contínua, implementei testes automatizados utilizando **Cypress** e **cypress-axe**.
 
-#### 🛠️ Tecnologias Adicionadas
+#### 🛠️ Tecnologias Utilizada
 *   **Cypress**: Framework para automação E2E.
 *   **cypress-axe**: Plugin para auditoria de acessibilidade baseada nas diretrizes **WCAG (Web Content Accessibility Guidelines)**.
 *   #### ⚙️ Como Rodar o Projeto
