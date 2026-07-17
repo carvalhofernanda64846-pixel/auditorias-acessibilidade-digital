@@ -65,7 +65,7 @@ Para executar os testes de acessibilidade em sua máquina, siga os passos abaixo
    npm install
 
 #### 📊 Relatório de Auditoria
-Foram identificadas 48 violações na página inicial. Abaixo, a análise técnica das regras infringidas:
+Foram identificadas 49 violações na página inicial. Abaixo, a análise técnica das regras infringidas:
 
 | Categoria | Ocorrências | Regra WCAG Infringida | Sugestão de Melhoria |
 | :--- | :---: | :--- | :--- |
