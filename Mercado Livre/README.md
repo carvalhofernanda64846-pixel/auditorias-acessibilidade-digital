@@ -34,7 +34,8 @@ Dificulta ou impede completamente a leitura de informações e a identificação
 * **Legislação Brasileira:** Artigo 63 da Lei nº 13.146 (Lei Brasileira de Inclusão - LBI).
 
 ### 🚀 Sugestão de Melhoria e Resultado Esperado
-Todos os textos e links devem passar por uma revisão da paleta de cores para atingir o contraste mínimo de 4.5:1. Para o foco do teclado no banner, sugere-se a aplicação de um estilo CSS customizado para destacar o elemento do fundo amarelo.
+Todos os textos e links devem passar por uma revisão da paleta de cores para atingir o contraste mínimo de 4.5:1. 
+Para o foco do teclado no banner, sugere-se a aplicação de um estilo CSS customizado para destacar o elemento do fundo amarelo.
 
 ### 📸 Evidência Visual:
 
