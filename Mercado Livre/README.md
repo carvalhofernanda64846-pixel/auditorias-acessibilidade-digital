@@ -96,6 +96,7 @@ Corrigir o código fonte da página para que as tags de lista contenham única e
 <img width="1908" height="803" alt="Captura de tela 2026-07-12 163918" src="https://github.com/user-attachments/assets/9b7e3205-2b84-4a79-9b50-353a0abece4c" />
 
 
+
 <img width="1860" height="808" alt="Captura de tela 2026-07-12 164015" src="https://github.com/user-attachments/assets/571c778e-245e-404e-bca4-10ef1d744f2f" />
 
 
