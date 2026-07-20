@@ -72,7 +72,7 @@ Garantir que todos os links inseridos no meio de blocos de texto possuam o subli
 ## 3. [Acessibilidade - Estrutura] ul and ol must only directly contain li, script or template elements (2 ocorrências)
 
 ### 🔍 Descrição do Bug
-A estrutura de código HTML de duas listas na página inicial está incorreta. Foram inseridas tags inválidas diretamente dentro de elementos de lista pai (<ul> ou <ol>), quebrando a semântica correta do código.
+A estrutura de código HTML de duas listas na página inicial está incorreta. Foram inseridas tags inválidas diretamente dentro de elementos de lista pai (`<ul> ou <ol>`), quebrando a semântica correta do código.
 
 ### 🎯 Impacto
 A árvore de acessibilidade do navegador é corrompida. Quando um software de leitura de tela (como o NVDA) processa essa área, ele pode anunciar o conteúdo de forma truncada ou pular informações vitais para o usuário cego.
@@ -94,6 +94,7 @@ Corrigir o código fonte da página para que as tags de lista contenham única e
 ### 📸 Evidência Visual:
 
 <img width="1908" height="803" alt="Captura de tela 2026-07-12 163918" src="https://github.com/user-attachments/assets/9b7e3205-2b84-4a79-9b50-353a0abece4c" />
+
 
 <img width="1860" height="808" alt="Captura de tela 2026-07-12 164015" src="https://github.com/user-attachments/assets/571c778e-245e-404e-bca4-10ef1d744f2f" />
 
