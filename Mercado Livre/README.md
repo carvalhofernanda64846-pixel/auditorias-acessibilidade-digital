@@ -130,3 +130,28 @@ Adicionar o atributo tabindex="0" no elemento contêiner div do carrossel (class
 ### 📸 Evidência Visual:
 
 <img width="1882" height="767" alt="Captura de tela 2026-07-12 164058" src="https://github.com/user-attachments/assets/0f946873-2142-4a90-820e-1c856f8b7e07" />
+
+## 5. Auditoria Automatizada de Acessibilidade (Cypress + Axe-core)
+
+​1. Como reproduzir a automação:
+​Utilizado o framework Cypress em conjunto com a biblioteca cypress-axe.
+​Comando de execução: npx cypress open via terminal no diretório do projeto.
+
+​Script configurado: Auditoria automática disparada após o carregamento da página inicial ([https://www.mercadolivre.com.br](https://www.mercadolivre.com.br)), utilizando o comando cy.injectAxe() e cy.checkA11y().
+
+​2. Erros detectados:
+​aria-hidden-focus (3 ocorrências): Elementos marcados como ocultos (aria-hidden) estão permitindo foco de teclado, quebrando a navegação inclusiva.
+​color-contrast (6 ocorrências): Elementos com baixo contraste de cor, dificultando a legibilidade para usuários com baixa visão.
+
+​3. Leis/Diretrizes violadas (WCAG):
+​WCAG 2.1 - Critério 1.4.3 (Contraste): Falha na relação de contraste mínimo entre texto e fundo.
+​WCAG 2.1 - Critério 2.4.3 (Ordem de Foco): Falha na gestão de foco, permitindo que tecnologias assistivas interajam com elementos ocultos.
+
+​4. Sugestão de Melhoria:
+​Para aria-hidden-focus: Revisar a lógica de visibilidade e garantir que elementos ocultos possuam tabindex="-1" ou remoção do atributo de foco quando o elemento não estiver visível.
+​Para color-contrast: Ajustar a paleta de cores dos componentes identificados para atender à proporção de contraste de, no mínimo, 4.5:1.
+
+### 📸 Evidência Visual:
+
+<img width="1800" height="655" alt="Captura de tela 2026-07-20 105537" src="https://github.com/user-attachments/assets/1e03433e-50ff-4854-8ee0-f5700e8a8728" />
+
