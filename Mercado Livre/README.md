@@ -137,7 +137,7 @@ Adicionar o atributo tabindex="0" no elemento contêiner div do carrossel (class
 ​Utilizado o framework Cypress em conjunto com a biblioteca cypress-axe.
 ​Comando de execução: npx cypress open via terminal no diretório do projeto.
 
-​Script configurado: Auditoria automática disparada após o carregamento da página inicial ([https://www.mercadolivre.com.br](https://www.mercadolivre.com.br)), utilizando o comando cy.injectAxe() e cy.checkA11y().
+​Script configurado: Auditoria automática disparada após o carregamento da página inicial ([https://www.mercadolivre.com.br](https://www.mercadolivre.com.br)), utilizando o comando `cy.injectAxe() e cy.checkA11y()`.
 
 ​2. Erros detectados:
 ​aria-hidden-focus (3 ocorrências): Elementos marcados como ocultos (aria-hidden) estão permitindo foco de teclado, quebrando a navegação inclusiva.
@@ -148,7 +148,7 @@ Adicionar o atributo tabindex="0" no elemento contêiner div do carrossel (class
 ​WCAG 2.1 - Critério 2.4.3 (Ordem de Foco): Falha na gestão de foco, permitindo que tecnologias assistivas interajam com elementos ocultos.
 
 ​4. Sugestão de Melhoria:
-​Para aria-hidden-focus: Revisar a lógica de visibilidade e garantir que elementos ocultos possuam tabindex="-1" ou remoção do atributo de foco quando o elemento não estiver visível.
+​Para aria-hidden-focus: Revisar a lógica de visibilidade e garantir que elementos ocultos possuam `tabindex="-1"` ou remoção do atributo de foco quando o elemento não estiver visível.
 ​Para color-contrast: Ajustar a paleta de cores dos componentes identificados para atender à proporção de contraste de, no mínimo, 4.5:1.
 
 ### 📸 Evidência Visual:
