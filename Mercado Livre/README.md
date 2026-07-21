@@ -151,6 +151,7 @@ Adicionar o atributo tabindex="0" no elemento contêiner div do carrossel (class
 ​4. Sugestão de Melhoria:
 
 ​Para aria-hidden-focus: Revisar a lógica de visibilidade e garantir que elementos ocultos possuam `tabindex="-1"` ou remoção do atributo de foco quando o elemento não estiver visível.
+
 ​Para color-contrast: Ajustar a paleta de cores dos componentes identificados para atender à proporção de contraste de, no mínimo, 4.5:1.
 
 ### 📸 Evidência Visual:
