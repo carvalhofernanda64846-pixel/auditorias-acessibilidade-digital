@@ -91,7 +91,7 @@ A árvore de acessibilidade do navegador é corrompida. Quando um software de le
 * **Modelo de Acessibilidade em Governo Eletrônico (eMAG):** Diretriz de Marcação Correta e Semântica.
 
 ### 🚀 Sugestão de Melhoria e Resultado Esperado
-Corrigir a estrutura do código para garantir que a lista contenha apenas itens de lista (`tags <li>`) imediatamente dentro dela, sem outros elementos intermediários.
+Corrigir a estrutura do código para garantir que a lista contenha apenas itens de lista (`tags <li>`) dentro dela, sem outros elementos intermediários.
 
 ### 📸 Evidência Visual:
 
