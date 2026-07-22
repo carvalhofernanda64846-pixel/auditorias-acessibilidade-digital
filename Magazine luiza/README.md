@@ -72,4 +72,4 @@ As ferramentas automatizadas não detectam falhas de fluxo e experiência de nav
 ## 🚀 Próximos Passos
 * [ ] Incluir testes automatizados de acessibilidade integrados.
 * [ ] Consolidar os dados desta auditoria em formato PDF para portfólio profissional.
-*
+
