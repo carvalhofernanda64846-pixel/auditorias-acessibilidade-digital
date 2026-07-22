@@ -30,8 +30,8 @@ Avaliar a conformidade de acessibilidade da plataforma com base nas diretrizes i
   * *Leis e Critérios Infringidos:* 
     * **WCAG 2.1 - Critério 1.4.3 (Contraste Mínimo - Nível AA):** O texto e imagens de texto devem ter uma relação de contraste de pelo menos 4.5:1.
 
-> **📸 Evidências**
-> 
+**📸 Evidências**
+ 
 <img width="1894" height="852" alt="Captura de tela 2026-07-22 110339" src="https://github.com/user-attachments/assets/6362af2c-a0d6-427e-8b1a-1119796e7826" />
 
 <img width="1911" height="721" alt="Captura de tela 2026-07-22 111030" src="https://github.com/user-attachments/assets/b89db3d5-b4b6-473d-a9d9-d905ff3ada14" />
