@@ -58,9 +58,9 @@ Durante a navegação assistida por teclado (tecla `Tab` e setas) e leitor de te
   * **10 Ocorrências de Links Sem Texto Discernível:** Impede o leitor de anunciar o destino do link.
   * **1 Ocorrência de Região com Scroll Sem Acesso por Teclado:** Seção de rolagem inacessível via tecla `Tab`.
 
- ### Evidência:
+  ### Evidência:
 
- <img width="1882" height="830" alt="Captura de tela 2026-07-24 173216" src="https://github.com/user-attachments/assets/86673ad2-e4e6-477a-b728-c176bcf0297f" />
+  <img width="1882" height="830" alt="Captura de tela 2026-07-24 173216" src="https://github.com/user-attachments/assets/86673ad2-e4e6-477a-b728-c176bcf0297f" />
 
 
 ## 📜 5. Diretrizes da WCAG e Legislação Afetada
