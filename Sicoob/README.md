@@ -37,7 +37,7 @@ Durante a navegação assistida por teclado (tecla `Tab` e setas) e leitor de te
 ### C. Tabelas, Consultas e Avisos Omitidos
 * **Tabela do Período de Participação e Sorteios:** O leitor ignora completamente o aviso *"Atenção para as datas do sorteio e para o período de participação"* e pula toda a tabela estruturada com as datas de início e término dos períodos, privando o usuário de saber quando os sorteios acontecem.
 * **Consulta de Números da Sorte:** O leitor não lê o título/instrução *"Consulte seus números da sorte"* e posiciona o foco diretamente dentro do campo *"Digite seu CPF ou CNPJ"*, seguido pelo botão *"Buscar"*.
-* **Título de Descadastro:** O título da seção é ignorado, lendo apenas o link *"Clique aqui para fazer o descadastro"*.
+* **Título de Descadastro:** O título da seção (*"Promoção poupança premiada SICOOB 2026"*) é ignorado, lendo apenas o link *"Clique aqui para fazer o descadastro"*.
 
 ## 🤖 4. Achados das Ferramentas Automatizadas
 
