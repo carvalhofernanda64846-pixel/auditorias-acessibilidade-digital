@@ -5,7 +5,7 @@
 ---
 
 ## 1. Resumo Executivo
-Esta auditoria técnica unificada avaliou a acessibilidade digital da página inicial do Banco do Brasil, combinando varreduras automatizadas recentes (WAVE e Axe DevTools) com testes manuais rigorosos focados na experiência de navegação por tecnologias assistivas (leitor de tela, navegação dinâmica por teclado, carrossel e acordeões/FAQ).
+Esta auditoria técnica unificada avaliou a acessibilidade digital da página inicial do Banco do Brasil, combinando varreduras automatizadas recentes (WAVE e Axe DevTools) com testes manuais rigorosos focados na experiência de navegação por tecnologias assistivas, leitor de tela (NVDA), navegação dinâmica por teclado.
 
 | Ferramenta / Método | Indicador / Métrica | Resultado / Status |
 | :--- | :--- | :--- |
