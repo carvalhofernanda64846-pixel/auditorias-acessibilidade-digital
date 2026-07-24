@@ -1,8 +1,6 @@
 # Relatório Técnico de Auditoria de Acessibilidade (A11y)
 **Alvo:** Página Inicial do Banco do Brasil (bb.com.br)  
 **Padrão de Referência:** WCAG 2.1 (Nível AA)  
-**Perfil do Auditor:** Junior QA Analyst  
-
 ---
 
 ## 1. Resumo Executivo
