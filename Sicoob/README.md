@@ -24,22 +24,20 @@ Este repositório documenta a auditoria técnica de acessibilidade digital reali
 
 Durante a navegação assistida por teclado (tecla `Tab` e setas) e leitor de tela NVDA, foram identificadas falhas severas de fluxo e conteúdo:
 
-### A. Imagens Informativas sem Texto Alternativo (`alt`)
-* **Banner Principal de Prêmios:** O leitor de tela ignora as informações visuais da campanha (3 Fiat Strada, 1 Hilux e motos Honda), bem como os textos da imagem (*"A cada R$ 200...", "Mais de 2 milhões em prêmios"*).
+### A. Imagens Informativas e Banners sem Texto Alternativo (`alt`)
+* **Banner Principal de Prêmios:** O leitor de tela ignora totalmente as informações visuais da campanha (3 Fiat Strada, 1 Hilux e motos Honda), bem como os textos da imagem (*"A cada R$ 200..."*, *"Mais de 2 milhões em prêmios"*).
 * **Banner Poupança Kids:** O leitor de tela não descreve o elemento gráfico (4 porquinhos no parque) e não lê o texto (*"30 viagens para o Beto Carrero com seu filho"*).
 * **Banner do App Sicoob:** O leitor não identifica o mockup visual do celular contendo a interface do aplicativo.
 
-### B. Quebra de Fluxo e Salto de Conteúdo (Instruções Ignoradas)
-* **Passo a Passo "Como Participar":** O leitor de tela pula os **4 passos informativos** (incluindo a regra de *"R$ 200 = 1 cupom"*) e salta direto para o botão *"Participe agora"*.
-* **Passo a Passo "Como Abrir a Conta no App":** O leitor ignora completamente os **5 passos do tutorial de abertura de conta** e salta para o FAQ do rodapé.
-* **Tabela de Datas dos Sorteios:** A estrutura de dados dos períodos de participação e sorteios é completamente omitida durante a navegação por teclado/leitor.
+### B. Quebra de Fluxo e Passos de Instrução Ignorados
+* **Passo a Passo "Como Participar":** O leitor ignora o card informativo *"A cada R$ 200 = 1 cupom"* e os 3 passos seguintes do tutorial, pulando direto para o botão *"Participe agora e comece a concorrer a prêmios!"*.
+* **Alerta de Menores de Idade:** Logo após o botão de participação, o leitor ignora o texto de aviso (*"Atenção responsáveis: a participação de menores de idade na promoção só será efetivada após a aceitação do cadastro"*) e salta direto para o botão/link *"Clique aqui para preencher os dados do menor participante"*.
+* **Passo a Passo "Como Abrir a Conta no App":** O leitor ignora os 5 passos do tutorial de abertura de conta pelo aplicativo e salta direto para o FAQ do rodapé.
 
-### C. Avisos, Títulos e Textos Omitidos
-* **Alerta de Menores:** O leitor de tela pula o aviso crucial (*"Atenção responsáveis: a participação de menores só será efetivada após a aceitação..."*) e cai direto na ação de preenchimento.
-* **Consulta de Números da Sorte:** A instrução *"Consulte seus números da sorte"* não é anunciada, posicionando o foco direto no campo *"Digite seu CPF"*.
+### C. Tabelas, Consultas e Avisos Omitidos
+* **Tabela do Período de Participação e Sorteios:** O leitor ignora completamente o aviso *"Atenção para as datas do sorteio e para o período de participação"* e pula toda a tabela estruturada com as datas de início e término dos períodos, privando o usuário de saber quando os sorteios acontecem.
+* **Consulta de Números da Sorte:** O leitor não lê o título/instrução *"Consulte seus números da sorte"* e posiciona o foco diretamente dentro do campo *"Digite seu CPF ou CNPJ"*, seguido pelo botão *"Buscar"*.
 * **Título de Descadastro:** O título da seção é ignorado, lendo apenas o link *"Clique aqui para fazer o descadastro"*.
-
----
 
 ## 🤖 4. Achados das Ferramentas Automatizadas
 
