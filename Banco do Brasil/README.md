@@ -67,5 +67,52 @@ Esta auditoria técnica unificada avaliou a acessibilidade digital da página in
 
 ---
 
-## 4. Automação de Testes de Acessibilidade (Cypress)
-*Espaço reservado para a implementação dos scripts de automação de testes voltados à validação de acessibilidade e regressão da interface do Banco do Brasil utilizando Cypress e axe-core.*
+## 4.🤖 Automação de Testes de Acessibilidade com (Cypress).
+
+A validação automatizada de acessibilidade foi implementada utilizando **Cypress** e a biblioteca **axe-core** para varredura e detecção de barreiras de interação em tempo de execução.
+
+### 🔍 Achados e Regras Afetadas (WCAG)
+
+1. **`document-title` (Ausência de Título no Documento)**
+   - **O que foi encontrado:** A página encontra-se sem a tag `<title>` ou com seu conteúdo vazio no cabeçalho.
+   - **Impacto:** Usuários de leitores de tela perdem o contexto inicial da página ao abri-la.
+
+2. **`html-has-lang` (Idioma Não Declarado)**
+   - **O que foi encontrado:** A tag raiz `<html>` está desprovida do atributo `lang`.
+   - **Impacto:** Impede que as tecnologias assistivas configurem a fonética e o dicionário de voz adequados para o idioma da aplicação.
+
+3. **`landmark-one-main` (Falta de Marco Principal)**
+   - **O que foi encontrado:** Ausência de um marco estrutural principal na página para orientar o usuário.
+   - **Impacto:** Dificulta a navegação rápida por leitores de tela e tecnologias de assistência.
+
+4. **`link-in-text-block` (Links sem Distinção Visual Adequada)**
+   - **O que foi encontrado:** Links inseridos em blocos de texto sem diferenciação visual suficiente além da cor pura.
+   - **Impacto:** Usuários com dificuldades de percepção visual ou daltônicos encontram barreiras para identificar links clicáveis no meio do texto.
+
+5. **`region` (Conteúdo Fora de Marcos Estruturais / Landmarks)**
+   - **O que foi encontrado:** Blocos importantes da página (como `.header`, `.content` e `.bottom`) estão estruturados como elementos genéricos (`<div>`) em vez de tags semânticas.
+   - **Impacto:** Dificulta a navegação estruturada por teclado e a pulsação entre seções principais.
+
+---
+
+### 💡 Sugestões de Melhoria e Correção para os Desenvolvedores
+
+- **Para o Título:** Inserir a tag de título devidamente preenchida na seção `<head>`:
+  `<title>Nome da Aplicação - Página Inicial</title>`
+
+- **Para o Idioma:** Adicionar o atributo de linguagem na abertura da tag HTML:
+  `<html lang="pt-BR">`
+
+- **Para os Links em Blocos de Texto:** Garantir que os links possuam sublinhado ou contraste visual adequado que não dependa exclusivamente da cor:
+  `<p>Consulte os <a href="#" style="text-decoration: underline;">termos de uso</a> para mais detalhes.</p>`
+
+- **Para os Marcos Estruturais:** Substituir as tags genéricas por elementos semânticos do HTML5 ou papéis ARIA:
+  `<header class="header">...</header>`
+  `<main class="content">...</main>`
+  `<footer class="bottom">...</footer>`
+
+  ### Evidência:
+  
+  <img width="1814" height="849" alt="Captura de tela 2026-07-24 105429" src="https://github.com/user-attachments/assets/e4dc3c3c-9090-4f15-9c01-c562d61ef581" />
+
+  
