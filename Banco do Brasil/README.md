@@ -36,6 +36,7 @@ Esta auditoria técnica unificada avaliou a acessibilidade digital da página in
 
 <img width="1878" height="832" alt="Captura de tela 2026-07-23 182933" src="https://github.com/user-attachments/assets/d0452fde-6153-4878-8717-5cdcf8e57311" />
 
+
 <img width="1911" height="794" alt="Captura de tela 2026-07-23 183937" src="https://github.com/user-attachments/assets/7aa08881-f989-40c2-8651-943f05bce923" />
 
 
