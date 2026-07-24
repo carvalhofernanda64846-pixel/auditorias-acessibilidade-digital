@@ -61,7 +61,7 @@ Esta auditoria técnica unificada avaliou a acessibilidade digital da página in
 
 ## 3. Recomendações de Remediação
 * **Contraste:** Atualizar a paleta de cores dos elementos apontados pelo WAVE (10 erros) e pelo Axe DevTools (12 issues) para garantir conformidade estrita com o limiar WCAG AA (4.5:1).
-* **Limpeza Semântica:** Remover ou preencher as tags de cabeçalho órfãs identificadas pelo WAVE.
+* **Limpeza Semântica:** Remover ou preencher as tags de cabeçalho vazio identificadas pelo WAVE.
 * **Acessibilidade em Carrosséis:** Inserir um botão de controle de *Play/Pause* totalmente acessível via teclado e assegurar que todas as imagens dos slides contenham o atributo descritivo adequado.
 * **Acordeões e FAQs:** Associar os botões de expansão aos seus respectivos títulos utilizando propriedades adequadas (`aria-expanded` e `aria-controls`), garantindo que o leitor de tela anuncie o contexto correto da pergunta.
 
