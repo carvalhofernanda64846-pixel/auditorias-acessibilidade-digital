@@ -26,7 +26,7 @@ Durante a navegação assistida por teclado (tecla `Tab` e setas) e leitor de te
 
 ### A. Imagens Informativas e Banners sem Texto Alternativo (`alt`)
 * **Banner Principal de Prêmios:** O leitor de tela ignora totalmente as informações visuais da campanha (3 Fiat Strada, 1 Hilux e motos Honda), bem como os textos da imagem (*"A cada R$ 200..."*, *"Mais de 2 milhões em prêmios"*).
-* **Banner Poupança Kids:** O leitor de tela não descreve o elemento gráfico (4 porquinhos no parque) e não lê o texto (*"30 viagens para o Beto Carrero com seu filho"*).
+* **Banner Poupança Kids:** O leitor de tela não descreve o elemento gráfico (4 porquinhos no parque) e não lê o texto (*"30 viagens para o Beto Carrero com seu filho e momentos incríveis em família*)
 * **Banner do App Sicoob:** O leitor não identifica o mockup visual do celular contendo a interface do aplicativo.
 
 ### B. Quebra de Fluxo e Passos de Instrução Ignorados
