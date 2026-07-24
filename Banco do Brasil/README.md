@@ -4,16 +4,16 @@
 ---
 
 ## 1. Resumo Executivo
-Esta auditoria técnica unificada avaliou a acessibilidade digital da página inicial do Banco do Brasil, combinando varreduras automatizadas (**WAVE** e **Axe DevTools**) com testes manuais rigorosos focados na experiência de navegação por tecnologias assistivas (leitor de tela, navegação dinâmica por teclado.[cite: 5].
+Esta auditoria técnica unificada avaliou a acessibilidade digital da página inicial do Banco do Brasil, combinando varreduras automatizadas (**WAVE** e **Axe DevTools**) com testes manuais rigorosos focados na experiência de navegação por tecnologias assistivas (leitor de tela, navegação dinâmica por teclado.
 
 | Ferramenta / Método | Indicador / Métrica | Resultado / Status |
 | :--- | :--- | :--- |
-| **WAVE Evaluation Tool** | Erros Estruturais | **1 Erro** (Cabeçalho Vazio / *Empty heading*)[cite: 5] |
-| **WAVE Evaluation Tool** | Erros de Contraste | **10 Contrast Errors** (Contraste muito baixo)[cite: 5] |
-| **Axe DevTools (axe-core)** | Issues Automáticas | **12 Issues** (Focadas em proporção mínima de contraste - Gravidade *Serious*)[cite: 5] |
-| **Testes Manuais (Teclado)** | Menus Expansíveis (*Sanfonas*) | **Conformidade OK** (Validação correta com a tecla *Esc* e foco preservado)[cite: 5] |
-| **Testes Manuais (Leitor de Tela)** | Carrossel de Banners e Mídia | **Falhas Críticas** (Falta de pausa de autoplay e imagens sem rótulo)[cite: 5] |
-| **Testes Manuais (Leitor de Tela)** | Acordeões de FAQ (*Sanfonas*) | **Falha Crítica** (Rótulos repetitivos: leitor lê apenas "botão recolhido")[cite: 5] |
+| **WAVE Evaluation Tool** | Erros Estruturais | **1 Erro** (Cabeçalho Vazio / *Empty heading*)|
+| **WAVE Evaluation Tool** | Erros de Contraste | **10 Contrast Errors** (Contraste muito baixo)|
+| **Axe DevTools (axe-core)** | Issues Automáticas | **12 Issues** (Focadas em proporção mínima de contraste - Gravidade *Serious*) |
+| **Testes Manuais (Teclado)** | Menus Expansíveis (*Sanfonas*) | **Conformidade OK** (Validação correta com a tecla *Esc* e foco preservado) |
+| **Testes Manuais (Leitor de Tela)** | Carrossel de Banners e Mídia | **Falhas Críticas** (Falta de pausa de autoplay e imagens sem rótulo) |
+| **Testes Manuais (Leitor de Tela)** | Acordeões de FAQ (*Sanfonas*) | **Falha Crítica** (Rótulos repetitivos: leitor lê apenas "botão recolhido")|
 
 ---
 
