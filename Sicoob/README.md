@@ -16,7 +16,7 @@ Este repositório documenta a auditoria técnica de acessibilidade digital reali
 | **AIM Score (WAVE WebAIM)** | **2.7 / 10** | 🔴 **Muito Crítico** | Indica alto impacto negativo para usuários com deficiência. |
 | **WAVE Tool** | 11 Erros Críticos \| 52 Falhas de Contraste | 🔴 **Reprovado** | Barreiras diretas na leitura e na visualização. |
 | **Axe DevTools** | 72 Problemas Graves (*Serious Issues*) | 🔴 **Reprovado** | Links inacessíveis, baixo contraste e regiões bloqueadas. |
-| **Navegação Manual (NVDA + Tab)** | 10+ Seções e Banners Ignorados | 🔴 **Reprovado** | Pulo de etapas do tutorial, ausência de `alt text` e tabelas semânticas. |
+| **Navegação Manual (NVDA + Tab)** | Seções e Banners Ignorados | 🔴 **Reprovado** | Pulo de etapas do tutorial, ausência de `alt text` e tabelas semânticas. |
 
 ---
 
