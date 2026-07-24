@@ -1,4 +1,4 @@
-# ♿ Auditoria e Testes de Acessibilidade Digital (WCAG 2.1)
+# Auditoria e Testes de Acessibilidade Digital (WCAG 2.1)
 > **Alvo da Análise:** Landing Page — Poupança Premiada Sicoob 2026  
 > **Responsável:** Junior QA Analyst  
 > **Metodologias:** Testes Manuais Assistivos (Teclado + Leitor de Tela) & Varreduras Automatizadas (WAVE, axe-core / Axe DevTools)
