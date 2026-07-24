@@ -95,7 +95,7 @@ A validação automatizada de acessibilidade foi implementada utilizando **Cypre
 
 ---
 
-### 💡 Sugestões de Melhoria e Correção para os Desenvolvedores
+### 💡 Sugestões de Melhoria e Correção
 
 - **Para o Título:** Inserir a tag de título devidamente preenchida na seção `<head>`:
   `<title>Nome da Aplicação - Página Inicial</title>`
