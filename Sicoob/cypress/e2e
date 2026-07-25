@@ -1,0 +1,13 @@
+describe('Auditoria Automatizada de Acessibilidade - Sicoob Poupança Premiada', () => {
+  beforeEach(() => {
+    // URL da campanha do Sicoob
+    cy.visit('https://www.sicoob.com.br/promocoes/poupancapremiada/');
+    cy.injectAxe();
+  });
+
+  it('Deve validar violações críticas e graves de acessibilidade na Landing Page', () => {
+    cy.checkA11y(null, {
+      includedImpacts: ['critical', 'serious']
+    });
+  });
+});
