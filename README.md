@@ -13,6 +13,7 @@ Este repositório está sendo alimentado diariamente com laudos técnicos práti
 * [📦 Auditoria 05 — Nubank (Ferramenta Axe DevTools e WAVE + Automação com Cypress)](./Nubank/README.md)
 * [📦 Auditoria 06 — Magazine Luiza (Ferramenta Axe DevTools e WAVE)](./Magazine%20luiza/README.md)
 * [📦 Auditoria 07 — Banco do Brasil (Ferramenta Axe DevTools e WAVE + Automação com Cypress)](./Banco%20do%20Brasil/README.md)
+* [📦 Auditoria 08 — Sicoob (Ferramenta Axe DevTools e WAVE + Automação com Cypress)](./Sicoob/README.md)
   
 
 
