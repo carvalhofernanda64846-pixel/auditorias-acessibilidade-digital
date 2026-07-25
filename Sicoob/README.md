@@ -95,5 +95,45 @@ As não-conformidades encontradas violam diretamente os seguintes critérios de 
 
 ---
 
-## 🚀 7. Próximos Passos
-**Automação de Testes End-to-End de Acessibilidade com Cypress e `cypress-axe`** *(Etapa em desenvolvimento)*
+## ⚙️ 5. Automação de Testes de Acessibilidade (Cypress + cypress-axe)
+
+A suíte de testes automatizados executada via **Cypress** com o motor **axe-core** confirmou as mesmas falhas críticas encontradas nos testes manuais e de extensão, reprovando a página na esteira automatizada.
+
+---
+
+### 🔍 O que foi achado na automação?
+
+A execução do teste automatizado detectou **2 categorias de violações graves (Impacto: Serious)**, afetando múltiplos elementos da tela:
+
+1. **`link-name` (Links sem texto descritivo):**
+   * **Achado:** Mapeou **10 links/elementos** no código da página sem nenhum texto identificável ou nome acessível.
+   * **Problema:** O leitor de tela lê apenas *"Link"* sem informar o destino ou a função do botão para o usuário.
+
+2. **`color-contrast` (Contraste de cor insuficiente):**
+   * **Achado:** Mapeou **9 elementos de texto e interface** que não possuem contraste suficiente com a cor de fundo.
+   * **Problema:** Dificulta ou impede a leitura por pessoas com baixa visão, daltônicos ou em ambientes muito iluminados.
+
+---
+
+### 📜 Critérios WCAG e Leis Infringidas
+
+As falhas capturadas pela automação violam diretamente os seguintes critérios internacionais e a legislação nacional:
+
+* **WCAG 2.1 - Critério 2.4.4 (Link Purpose - In Context - Nível A):** Exige que a finalidade de cada link possa ser determinada apenas pelo texto do link.
+* **WCAG 2.1 - Critério 1.4.3 (Contrast - Minimum - Nível AA):** Exige uma proporção mínima de contraste de **4.5:1** entre o texto e o plano de fundo.
+* **Lei Brasileira de Inclusão (Lei nº 13.146/2015 - Art. 63):** Torna obrigatória a acessibilidade nos sítios da internet mantidos por empresas públicas e privadas no Brasil.
+
+---
+
+### 💡 Sugestões de Melhoria (Como corrigir)
+
+1. **Rotular os 10 Links Vazios:**
+   * Inserir textos visíveis descritivos ou adicionar o atributo `aria-label="Descrição da ação do link"` em todos os elementos de link afim de garantir que o leitor de tela anuncie o destino correto.
+2. **Ajustar a Paleta de Cores e Contraste:**
+   * Alterar a tonalidade das fontes ou dos fundos verde/amarelo para alcançar a taxa de contraste de pelo menos **4.5:1**, garantindo legibilidade universal.
+  
+   ### Evidência:
+   
+   <img width="1813" height="797" alt="Captura de tela 2026-07-24 182932" src="https://github.com/user-attachments/assets/bf427812-f67e-40da-a24c-38eb92548920" />
+
+   
