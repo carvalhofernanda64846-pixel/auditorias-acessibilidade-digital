@@ -18,7 +18,7 @@ O objetivo é identificar barreiras de uso para pessoas com deficiência visual 
 
 | Tela Analisada | Método Utilizado | Status / Avaliação | Impacto na Experiência |
 | :--- | :--- | :--- | :--- |
-| **Página Inicial (Home)** | Scanner de Acessibilidade (Google) | 🟡 Regular | **16 Sugestões de Melhoria** mapeadas e agrupadas por categorias de falhas. |
+| **Página Inicial (Home)** | Scanner de Acessibilidade (Google) | 🟡 Regular | 16 Sugestões de Melhoria mapeadas e agrupadas por categorias de falhas. |
 | **Página de Busca** | Leitor de Tela (TalkBack) | 🟢 Excelente | Estrutura nativa impecável, leitura lógica e navegação fluida. |
 
 ---
