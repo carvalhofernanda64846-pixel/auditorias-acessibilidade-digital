@@ -32,7 +32,8 @@ A ferramenta automatizada do Google gerou **16 sugestões de melhoria** na inter
 *   **O Problema:** Como o TalkBack já adiciona automaticamente a frase *"toque duas vezes para ativar"* ao final de elementos clicáveis, a fala fica repetitiva e confusa para o usuário cego.
 *   **Critério WCAG Afetado:** 4.1.2 (Name, Role, Value).
   
-  ### Evidência:** 
+  ### Evidência:
+  
 <img width="540" height="1204" alt="WhatsApp Image 2026-07-27 at 9 48 00 AM" src="https://github.com/user-attachments/assets/f6598ae4-176a-42ab-9281-a2aabffc4129" />
 
 
@@ -41,7 +42,7 @@ A ferramenta automatizada do Google gerou **16 sugestões de melhoria** na inter
 *   **O Problema:** A proporção de cor quebra a regra de contraste mínimo de **4.5:1**, gerando fadiga visual e dificultando o acesso de pessoas com baixa visão. O Scanner detecta cada elemento com cor fraca de forma individual, inflando o número total de alertas.
 *   **Critério WCAG Afetado:** 1.4.3 (Contrast - Minimum).
 *   
-  ### Evidência:**
+  ### Evidência:
   
 <img width="540" height="1204" alt="WhatsApp Image 2026-07-27 at 9 42 21 AM" src="https://github.com/user-attachments/assets/59987770-3ec9-4612-9074-eab98f30a33d" />
 
