@@ -88,9 +88,11 @@ Ao contrário da página inicial, a Tela de Busca do iFood apresentou um **padr�
 
 1.  **Ajuste no Código da Página Inicial (Banner):**
     No código nativo do Android (`XML` ou `Jetpack Compose`), remova o texto *"toque duas vezes"* do atributo `contentDescription`. Deixe apenas o texto informativo do banner (ex: `android:contentDescription="Promoção iFood Rock in Rio: seu pedido no app pode virar ingressos"`). O sistema operacional cuida da instrução de clique sozinho.
-2.  **Correction de Contraste na Página Inicial:**
+    
+3.  **Correction de Contraste na Página Inicial:**
     Modificar a cor da fonte ou aplicar um fundo sólido de alto contraste atrás do texto de alerta de cupons na Home para atingir a taxa mínima de 4.5:1.
-3.  **Expansão da Zona de Clique:**
+    
+5.  **Expansão da Zona de Clique:**
     Garantir que todos os componentes interativos do menu da Home possuam uma área de toque mínima de **48x48 dp**, inserindo espaçamentos (*paddings*) invisíveis se necessário.
 
 ---
