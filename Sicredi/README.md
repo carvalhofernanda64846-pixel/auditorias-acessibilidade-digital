@@ -56,6 +56,7 @@ A inspeção automática do WAVE escaneou a interface e acusou erros de preenchi
 ### 📐 ETAPA 3: Inspeção Estrutural de Código (Extensão Axe DevTools)
 O motor do Axe analisou a semântica do HTML e identificou 7 não-conformidades críticas:
 *   **4 Ocorrências de Botões sem Texto (Buttons must have discernible text):** Identificados especificamente na classe `button.owl-dot` (as linhas de paginação do carrossel principal). Os botões existem no código, mas o texto descritivo está totalmente vazio (`Accessible Text: empty`).
+
 *   **3 Ocorrências de Controles Aninhados (Interactive controls must not be nested):** Elementos interativos inseridos incorretamente dentro de outros blocos clicáveis na estrutura do código.
     *   *Critério WCAG Afetado:* 4.1.2 (Name, Role, Value).
  
@@ -68,6 +69,7 @@ O motor do Axe analisou a semântica do HTML e identificou 7 não-conformidades 
 ### 🤖 ETAPA 4: Automação Contínua com Script (Cypress + `cypress-axe`)
 Execução do script de teste automatizado local para simular uma esteira de integração contínua (CI/CD). O robô barrou o carregamento da página e acusou a seguinte quebra:
 *   **Falha Identificada:** `a11y error! nested-interactive on 3 nodes`
+
 *   **Análise do Bug no Painel:** O motor do Cypress identificou elementos interativos inválidos e aninhados na seção **"Para você"** (bloco informativo de finanças). O código inseriu tags clicáveis de forma incorreta dentro do contêiner do bloco, gerando um conflito de nós que quebra a árvore de acessibilidade do navegador e confunde as tecnologias assistivas.
     *   *Critério WCAG Afetado:* 4.1.2 (Name, Role, Value).
 
