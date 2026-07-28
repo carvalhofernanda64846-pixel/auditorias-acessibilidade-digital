@@ -75,7 +75,7 @@ Execução do script de teste automatizado local para simular uma esteira de int
 
 ### Evidência:
 
-<img width="1830" height="826" alt="Captura de tela 2026-07-28 103603" src="https://github.com/user-attachments/assets/43282cd5-5241-4afc-9247-9aa9583028f4" />
+<img width="1812" height="824" alt="Captura de tela 2026-07-28 111021" src="https://github.com/user-attachments/assets/e2a46b88-554a-404b-b0bb-8c910150f1eb" />
 
 ---
 
