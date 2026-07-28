@@ -79,11 +79,14 @@ Execução do script de teste automatizado local para simular uma esteira de int
 
 ---
 
-## 💡 4. Plano de Mitigação Técnico:
+## 💡 4. Plano de Mitigação Técnico (Recomendações para Engenharia)
 
-1.  **Estilização do Foco (`CSS`):** Aplicar a propriedade CSS `:focus-visible` customizada para forçar uma borda espessa e de alto contraste (mínimo de 4.5:1) nos botões e links interativos da página.
-2.  **Rótulos no Carrossel:** Adicionar a propriedade `aria-label="Ir para o banner [X]"` em cada tag `button.owl-dot` para dar sentido às linhas de paginação.
-3.  **Vínculo Semântico no Suporte:** Utilizar o atributo `aria-describedby` nos links de telefone apontando para o ID do texto do setor correspondente (SAC, Ouvidoria), além de preencher a tag `alt` nas imagens dos QR Codes de Libras e Português.
-4.  **Correção de Tags Aninhadas:** Separar os elementos clicáveis inválidos apontados pelo Cypress na seção "Para você" em componentes limpos, independentes e hierárquicos no HTML.
+1.  **Estilização do Foco (`CSS`):** Aplicar a propriedade CSS `:focus-visible` customizada para forçar uma borda espessa e de alto contraste (mínimo de 4.5:1) nos botões e links interativos da página, evitando o sumiço visual do seletor.
+2.  **Correção do Fluxo e Leitura nos Cartões (`HTML5`):** 
+    *   Garantir que a árvore de acessibilidade siga a ordem lógica natural: o foco deve passar primeiro pelo título do produto (`<h3>Cartão Sicredi Mastercard Black</h3>`), descer para o bloco de texto das vantagens e, por último, chegar ao botão de clique.
+    *   Remover a redundância do botão de clique duplo e associar o nome do cartão ao botão utilizando a propriedade `aria-label="Solicitar cartão Mastercard Black"`.
+3.  **Rótulos no Carrossel:** Adicionar a propriedade `aria-label="Ir para o banner [X]"` em cada tag `button.owl-dot` para dar sentido técnico às linhas de paginação vazias.
+4.  **Vínculo Semântico no Suporte:** Utilizar o atributo `aria-describedby` nos links de telefone apontando para o ID do texto do setor correspondente (SAC, Ouvidoria), além de preencher a tag `alt` nas imagens dos QR Codes de Libras e Português para que deixem de ser elementos fantasmas.
+5.  **Correção de Tags Aninhadas:** Separar os elementos clicáveis inválidos apontados pelo Cypress na seção "Para você" em componentes limpos, independentes e hierárquicos na árvore do DOM.
 
 ---
