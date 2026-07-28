@@ -1,0 +1,25 @@
+describe('Auditoria Automatizada de Acessibilidade — Sicredi Landing Page', () => {
+  
+  // Garante que o robô ignore erros menores de scripts internos do banco
+  Cypress.on('uncaught:exception', () => false);
+
+  it('Deve carregar a página de captação e escanear o HTML contra falhas da WCAG', () => {
+    
+    // Visita a URL exata do seu teste manual e dá tempo para carregar
+    cy.visit('https://www.sicredi.com.br/site/seja-associado/?utm_source=google&utm_medium=cpc&utm_campaign=cas_atracao_atracao_jotacom_google_search_conversao_naoassociado_brand-exata-ampla_leads&utm_content=exata&utm_term=fev_texto3&gad_source=1', {
+      timeout: 90000 // Aumenta o tempo para 90 segundos para a página carregar com calma
+    });
+
+    // Injeta o motor de varredura do axe-core
+    cy.injectAxe();
+
+    // Executa a varredura completa buscando violações dos níveis A e AA
+    cy.checkA11y(null, {
+      runOnly: {
+        type: 'tag',
+        values: ['wcag2a', 'wcag21a', 'wcag2aa', 'wcag21aa']
+      }
+    });
+
+  });
+});
