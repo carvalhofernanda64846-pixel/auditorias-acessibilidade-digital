@@ -16,7 +16,7 @@ O processo foi dividido de forma estrita em quatro etapas sequenciais para garan
 | Etapa do Teste | Ferramenta Utilizada | Status / Avaliação | Escopo do Mapeamento |
 | :---: | :--- | :--- | :--- |
 | **1** | Teste Manual (Teclado `Tab` + NVDA) | 🔴 Crítico | Barreiras visuais de foco e omissão de conteúdos essenciais. |
-| **2** | Extensão WAVE | 🔴 Crítico | **20 Erros Críticos** e **92 Alertas** de acessibilidade no HTML. |
+| **2** | Extensão WAVE | 🔴 Crítico | **20 Erros Críticos** e 92 Alertas de acessibilidade no HTML. |
 | **3** | Extensão Axe DevTools | 🔴 Crítico | **7 Issues estruturais** (4 Críticas e 3 Sérias). |
 | **4** | Automação com **Cypress** | 🔴 Falha Técnica | Quebra estrutural por elementos interativos aninhados. |
 
