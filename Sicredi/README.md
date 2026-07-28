@@ -29,8 +29,10 @@ Testes executados sem o uso de mouse, simulando a navegação de usuários cegos
 
 1.  **Camuflagem Visual do Indicador de Foco:** Ao navegar com a tecla `Tab`, a bordinha preta padrão do navegador que indica a seleção do elemento simplesmente desaparece ou fica invisível ao passar por cima das cores e detalhes em verde escuro corporativo da marca.
     *   *Critério WCAG Afetado:* 2.4.13 (Focus Appearance - WCAG 2.2).
+      
 2.  **Omissão de Conteúdo e Contratação "No Escuro" (Seção de Cartões):** O foco do teclado cai direto no botão "Solicitar cartão" duas vezes seguidas e pula para "Expandir características". O sistema ignora e não lê o título do cartão (ex: Mastercard Black) e pula todas as vantagens textuais (como Salas VIP). O usuário cego é induzido a contratar um produto sem o sistema ler as especificações.
     *   *Critério WCAG Afetado:* 1.3.2 (Meaningful Sequence) e 2.1.1 (Keyboard).
+   
 3.  **Falta de Contexto nos Canais de Suporte (Rodapé):** O leitor de tela foca nos links numéricos e lê apenas os números isolados ("0800..."), ignorando os textos estáticos dos setores. É impossível saber qual número é o SAC, Ouvidoria ou Denúncia. Além disso, o seletor ignora os QR Codes, ocultando o canal de atendimento em Libras para usuários surdos.
     *   *Critério WCAG Afetado:* 2.4.4 (Link Purpose - In Context) e 1.1.1 (Non-text Content).
 
@@ -39,7 +41,9 @@ Testes executados sem o uso de mouse, simulando a navegação de usuários cegos
 ### 🌊 ETAPA 2: Varredura Automatizada Visual (Extensão WAVE)
 A inspeção automática do WAVE escaneou a interface e acusou erros de preenchimento e relacionamento no código:
 *   **13 Erros de Texto Alternativo Ausente (Missing Alternative Text):** Confirma o problema do teste manual. Os QR Codes de suporte (Libras e Português) e mais 11 imagens informativas não possuem a tag `alt`, tornando-se invisíveis para deficientes visuais.
+
 *   **6 Erros de Imagens de Espaçamento (Spacer Image):** Uso de imagens transparentes antigas para diagramar o layout sem o atributo `alt=""` vazio, gerando ruído de leitura inútil no NVDA.
+
 *   **1 Erro de Rótulo de Formulário (Missing Form Label):** O campo de input do topo ("Informe seu nome para iniciar") não possui uma tag `<label>` vinculada por ID no código, impedindo o leitor de anunciar o que deve ser digitado ali.
     *   *Critério WCAG Afetado:* 1.1.1 (Non-text Content) e 1.3.1 (Info and Relationships).
  
