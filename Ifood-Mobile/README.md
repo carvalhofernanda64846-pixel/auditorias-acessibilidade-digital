@@ -41,7 +41,7 @@ A ferramenta automatizada do Google gerou **16 sugestões de melhoria** na inter
 *   **O Bug:** Textos de cupons premiados e detalhes de frete/distância utilizam cores que competem com o fundo ou com ilustrações da tela.
 *   **O Problema:** A proporção de cor quebra a regra de contraste mínimo de **4.5:1**, gerando fadiga visual e dificultando o acesso de pessoas com baixa visão. O Scanner detecta cada elemento com cor fraca de forma individual, inflando o número total de alertas.
 *   **Critério WCAG Afetado:** 1.4.3 (Contrast - Minimum).
-*   
+
   ### Evidência:
   
 <img width="540" height="1204" alt="WhatsApp Image 2026-07-27 at 9 42 21 AM" src="https://github.com/user-attachments/assets/59987770-3ec9-4612-9074-eab98f30a33d" />
