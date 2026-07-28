@@ -1,4 +1,4 @@
-# 📱 Auditoria e Testes de Acessibilidade Digital Mobile (WCAG 2.1)
+# 📱 Auditoria e Testes de Acessibilidade Digital Mobile (WCAG 2.1/2.2)
 
 ## 🎯 Alvo da Análise: Aplicativo iFood (Android)
 *   **Varredura Automatizada:** Executada na **Página Inicial (Home)** usando o Scanner de Acessibilidade do Google.
@@ -10,7 +10,7 @@
 ## 📋 1. Visão Geral do Projeto
 Este repositório documenta a auditoria técnica de acessibilidade digital realizada no aplicativo móvel do **iFood** para Android. A análise foi dividida estrategicamente em duas etapas: uma validação automatizada na porta de entrada do app (Página Inicial) e um teste manual focado na experiência de navegação do usuário (Página de Busca).
 
-O objetivo é identificar barreiras de uso para pessoas com deficiência visual ou baixa visão, mapear as excelentes práticas encontradas e garantir a conformidade com las diretrizes da **WCAG 2.1 (Nível AA)** e com a **Lei Brasileira de Inclusão (Lei nº 13.146/2015, Art. 63)**.
+O objetivo é identificar barreiras de uso para pessoas com deficiência visual ou baixa visão, mapear as excelentes práticas encontradas e garantir a conformidade com las diretrizes da **WCAG 2.1/2.2 (Nível AA)** e com a **Lei Brasileira de Inclusão (Lei nº 13.146/2015, Art. 63)**.
 
 ---
 
