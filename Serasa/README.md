@@ -21,7 +21,7 @@ O processo foi dividido rigorosamente em quatro etapas independentes para mapear
 | **1** | Teste Manual (Teclado `Tab` + NVDA) | 🔴 Crítico | Bloqueio de navegação por foco fantasma e quebra de rolagem. |
 | **2** | Extensão WAVE | 🔴 Crítico | **29 Erros Críticos**, **19 Erros de Contraste** e **112 Alertas**. |
 | **3** | Extensão Axe DevTools | 🔴 Crítico | **21 Issues estruturais** no HTML (Regiões de rolagem e ARIA). |
-| **4** | Automação com **Cypress** |  | 🔴 Falha  | Script automatizado barrou 3 tipos de erros críticos (Contraste, Imagem e Rolagem) em 6 nós da árvore do DOM. |
+| **4** | Automação com **Cypress** |  | 🔴 Falha  | Script automatizado barrou 3 tipos de erros críticos (Contraste, Imagem e Rolagem) em 6 nós da árvore do DOM.|
 
 ---
 
