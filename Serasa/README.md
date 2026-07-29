@@ -53,21 +53,26 @@ A inspeção automática do WAVE identificou falhas severas de relacionamento e 
 ### 📐 ETAPA 3: Inspeção Estrutural de Código (Extensão Axe DevTools)
 O motor do Axe analisou a semântica profunda do HTML e trouxe as evidências técnicas das falhas de engenharia do portal, totalizando **21 não-conformidades críticas** divididas em 7 categorias de erros:
 
-1.  **Região de Rolagem Sem Acesso por Teclado (1 ocorrência):** Alvo da regra *Scrollable region must have keyboard access*. Bloqueio estrutural no código que impede fisicamente o teclado de comandar o movimento de descida da tela (causa direta do travamento e da falha de scroll relatada na Etapa 1).
-    *   *Diretriz Violada:* WCAG 2.1 — Critério 2.1.1 (Keyboard).
-2.  **Insuficiência de Contraste Cromático (12 ocorrências):** Alvo da regra *Elements must meet minimum color contrast*. Textos e links com cores apagadas abaixo do limite aceitável de leitura de 4.5:1, prejudicando severamente pessoas com baixa visão ou ceratocone.
-    *   *Diretriz Violada:* WCAG 2.1 — Critério 1.4.3 (Contrast).
-3.  **Hierarquia Inválida de Tags ARIA (4 ocorrências):** Alvo da regra *Certain ARIA roles must be contained by particular parents*. Elementos ARIA soltos e mal estruturados no HTML que quebram o fluxo, fazendo o leitor de tela anunciar pedaços de frases sem nexo.
-    *   *Diretriz Violada:* WCAG 2.1 — Critério 1.3.1 (Info and Relationships).
-4.  **Foco em Elementos Ocultos (1 ocorrência):** Alvo da regra *ARIA hidden element must not be focusable*. Links ou botões interativos inseridos por erro dentro de blocos marcados com `aria-hidden="true"`, forçando o teclado a passar por links invisíveis (Focos Fantasmas).
-    *   *Diretriz Violada:* WCAG 2.1 — Critério 4.1.2 (Name, Role, Value).
-5.  **Valores Inválidos em Atributos ARIA (1 ocorrência):** Alvo da regra *ARIA attributes must conform to valid values*. Atributos de acessibilidade preenchidos com termos incorretos no código, confundindo o sintetizador de voz do NVDA.
-    *   *Diretriz Violada:* WCAG 2.1 — Critério 4.1.2 (Name, Role, Value).
-6.  **Botões Sem Texto Informativo (1 ocorrência):** Alvo da regra *Buttons must have discernible text*. Tag `<button>` vazia ou sem rótulo acessível, fazendo o leitor de tela falar apenas "Botão", ocultando a ação do usuário cego.
-    *   *Diretriz Violada:* WCAG 2.1 — Critério 4.1.2 (Name, Role, Value).
-7.  **Imagem Sem Descrição Textual (1 ocorrência):** Alvo da regra *Images must have alternative text*. Elemento gráfico sem o preenchimento da tag `alt`, omitindo o contexto visual.
-    *   *Diretriz Violada:* WCAG 2.1 — Critério 1.1.1 (Non-text Content).
-    
+1. **Região de Rolagem Sem Acesso por Teclado (Scrollable region must have keyboard access) — 1 ocorrência:** Bloqueio estrutural no código que impede fisicamente o teclado de comandar o movimento de descida da tela (causa direta do travamento de scroll relatado no teste manual).
+   * *Diretriz Violada:* WCAG 2.1 — Critério 2.1.1 (Keyboard).
+
+2. **Insuficiência de Contraste Cromático (Elements must meet minimum color contrast) — 12 ocorrências:** Textos e links com cores apagadas abaixo do limite aceitável de leitura de 4.5:1, prejudicando pessoas com baixa visão ou ceratocone.
+   * *Diretriz Violada:* WCAG 2.1 — Critério 1.4.3 (Contrast).
+
+3. **Hierarquia Inválida de Tags ARIA (Certain ARIA roles must be contained by particular parents) — 4 ocorrências:** Elementos de acessibilidade soltos e mal estruturados no HTML que quebram o fluxo de voz do NVDA.
+   * *Diretriz Violada:* WCAG 2.1 — Critério 1.3.1 (Info and Relationships).
+
+4. **Foco em Elementos Ocultos (ARIA hidden element must not be focusable) — 1 ocorrência:** Links ou botões interativos inseridos por erro dentro de blocos escondidos, forçando o teclado a passar por links invisíveis (Focos Fantasmas).
+   * *Diretriz Violada:* WCAG 2.1 — Critério 4.1.2 (Name, Role, Value).
+
+5. **Valores Inválidos em Atributos ARIA (ARIA attributes must conform to valid values) — 1 ocorrência:** Atributos preenchidos com termos incorretos no código, confundindo o sintetizador de voz do leitor de tela.
+   * *Diretriz Violada:* WCAG 2.1 — Critério 4.1.2 (Name, Role, Value).
+
+6. **Botões Sem Texto Informativo (Buttons must have discernible text) — 1 ocorrência:** Tag de botão vazia ou sem rótulo acessível, fazendo o leitor de tela falar apenas "Botão", ocultando a ação.
+   * *Diretriz Violada:* WCAG 2.1 — Critério 4.1.2 (Name, Role, Value).
+
+7. **Imagem Sem Descrição Textual (Images must have alternative text) — 1 ocorrência:** Elemento gráfico sem o preenchimento da tag de texto alternativo.
+   * *Diretriz Violada:* WCAG 2.1 — Critério 1.1.1 (Non-text Content).
 ### Evidência:
 
 <img width="1907" height="838" alt="Captura de tela 2026-07-29 101844" src="https://github.com/user-attachments/assets/c5aace9d-51fa-41eb-af25-74cc0b1ad298" />
@@ -75,11 +80,18 @@ O motor do Axe analisou a semântica profunda do HTML e trouxe as evidências t�
 
 ## 💡 4. Diretrizes WCAG & Plano de Correção para a Engenharia
 
-1.  **Sincronização de Scroll (`CSS/JS`):** Ajustar as propriedades de transição da página para garantir que o contêiner e a janela acompanhem visualmente o foco ativo do teclado de forma dinâmica.
-2.  **Saneamento de Formulários (`HTML5`):** Remover os rótulos duplicados e garantir que cada um dos 10 campos de entrada possua exatamente uma tag `<label>` exclusiva vinculada via atributo `for` ao `id` do campo.
-3.  **Remoção de Focos Fantasmas:** Ajustar a árvore de acessibilidade do DOM, garantindo que nenhum elemento que receba foco via teclado (`Tab`) esteja aninhado dentro de contêineres ocultados por tags ARIA hidden.
-4.  **Ajuste de Acessibilidade Visual:** Corrigir as 12 fontes e links apagados, elevando a taxa de contraste cromático para o mínimo de 4.5:1 exigido pela WCAG.
-
+1.  **Interface e Navegação (`CSS/JS`):** 
+    *   Sincronizar os gatilhos de transição e foco para garantir que a janela acompanhe visualmente o elemento ativo selecionado via teclado (correção do bug de scroll).
+    *   Customizar a propriedade CSS `:focus-visible` para fornecer uma borda nítida e espessa, eliminando a camuflagem visual do foco sobre o fundo.
+2.  **Saneamento de Formulários e Captura de Dados (`HTML5`):**
+    *   Remover as 14 ocorrências de rótulos duplicados no HTML para zerar o conflito de leitura no NVDA.
+    *   Garantir que cada um dos 10 campos de formulário mapeados possua exatamente uma tag `<label>` exclusiva vinculada de forma semântica pelo atributo `for` correspondente ao `id` do campo.
+3.  **Ajuste de Acessibilidade Visual e Conteúdo (`Design/Código`):**
+    *   Corrigir a paleta de cores das 12 fontes e links apagados, elevando a taxa de contraste cromático para o mínimo de 4.5:1 exigido pela WCAG.
+    *   Preencher o atributo `alt` descritivo na imagem e no botão identificados como vazios pelo WAVE e Axe.
+4.  **Limpeza da Árvore de Acessibilidade (`ARIA`):**
+    *   Ajustar os blocos estruturais do site, garantindo que nenhum elemento que receba foco via teclado esteja aninhado dentro de contêineres que utilizam a tag `aria-hidden="true"`.
+    *   Corrigir a hierarquia das tags ARIA soltas e validar a grafia dos atributos para que o leitor de tela leia as frases com coerência.
 ---
 
 ### 🤖 ETAPA 5: Automação com (Cypress + `cypress-axe`)
