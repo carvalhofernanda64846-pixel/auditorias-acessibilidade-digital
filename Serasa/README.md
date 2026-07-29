@@ -51,12 +51,23 @@ A inspeção automática do WAVE identificou falhas severas de relacionamento e 
 ---
 
 ### 📐 ETAPA 3: Inspeção Estrutural de Código (Extensão Axe DevTools)
-O motor do Axe analisou a semântica profunda do HTML e trouxe as evidências técnicas das falhas de engenharia do portal:
-*   **Região de Rolagem Sem Acesso (Scrollable region must have keyboard access):** Bloqueio estrutural no código que impede fisicamente o teclado de comandar o movimento de descida da tela (causa direta do travamento relatado na Etapa 1).
-*   **Foco em Elementos Ocultos (ARIA hidden focusable):** Presença de links e botões interativos inseridos por erro dentro de blocos marcados com `aria-hidden="true"`, forçando o teclado a passar por links invisíveis (Focos Fantasmas).
-*   **12 Falhas de Contraste Cromático:** Textos e links com cores abaixo do limite aceitável de leitura, prejudicando pessoas com baixa visão ou ceratocone.
-    *   *Diretriz Violada:* WCAG 2.1 — Critério 2.1.1 (Keyboard), Critério 4.1.2 (Name, Role, Value) e Critério 1.4.3 (Contrast).
- 
+O motor do Axe analisou a semântica profunda do HTML e trouxe as evidências técnicas das falhas de engenharia do portal, totalizando **21 não-conformidades críticas** divididas em 7 categorias de erros:
+
+1.  **Região de Rolagem Sem Acesso por Teclado (1 ocorrência):** Alvo da regra *Scrollable region must have keyboard access*. Bloqueio estrutural no código que impede fisicamente o teclado de comandar o movimento de descida da tela (causa direta do travamento e da falha de scroll relatada na Etapa 1).
+    *   *Diretriz Violada:* WCAG 2.1 — Critério 2.1.1 (Keyboard).
+2.  **Insuficiência de Contraste Cromático (12 ocorrências):** Alvo da regra *Elements must meet minimum color contrast*. Textos e links com cores apagadas abaixo do limite aceitável de leitura de 4.5:1, prejudicando severamente pessoas com baixa visão ou ceratocone.
+    *   *Diretriz Violada:* WCAG 2.1 — Critério 1.4.3 (Contrast).
+3.  **Hierarquia Inválida de Tags ARIA (4 ocorrências):** Alvo da regra *Certain ARIA roles must be contained by particular parents*. Elementos ARIA soltos e mal estruturados no HTML que quebram o fluxo, fazendo o leitor de tela anunciar pedaços de frases sem nexo.
+    *   *Diretriz Violada:* WCAG 2.1 — Critério 1.3.1 (Info and Relationships).
+4.  **Foco em Elementos Ocultos (1 ocorrência):** Alvo da regra *ARIA hidden element must not be focusable*. Links ou botões interativos inseridos por erro dentro de blocos marcados com `aria-hidden="true"`, forçando o teclado a passar por links invisíveis (Focos Fantasmas).
+    *   *Diretriz Violada:* WCAG 2.1 — Critério 4.1.2 (Name, Role, Value).
+5.  **Valores Inválidos em Atributos ARIA (1 ocorrência):** Alvo da regra *ARIA attributes must conform to valid values*. Atributos de acessibilidade preenchidos com termos incorretos no código, confundindo o sintetizador de voz do NVDA.
+    *   *Diretriz Violada:* WCAG 2.1 — Critério 4.1.2 (Name, Role, Value).
+6.  **Botões Sem Texto Informativo (1 ocorrência):** Alvo da regra *Buttons must have discernible text*. Tag `<button>` vazia ou sem rótulo acessível, fazendo o leitor de tela falar apenas "Botão", ocultando a ação do usuário cego.
+    *   *Diretriz Violada:* WCAG 2.1 — Critério 4.1.2 (Name, Role, Value).
+7.  **Imagem Sem Descrição Textual (1 ocorrência):** Alvo da regra *Images must have alternative text*. Elemento gráfico sem o preenchimento da tag `alt`, omitindo o contexto visual.
+    *   *Diretriz Violada:* WCAG 2.1 — Critério 1.1.1 (Non-text Content).
+    
 ### Evidência:
 
 <img width="1907" height="838" alt="Captura de tela 2026-07-29 101844" src="https://github.com/user-attachments/assets/c5aace9d-51fa-41eb-af25-74cc0b1ad298" />
