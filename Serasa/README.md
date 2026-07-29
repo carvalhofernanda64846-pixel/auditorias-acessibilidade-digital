@@ -77,26 +77,42 @@ O motor do Axe analisou a semântica profunda do HTML e trouxe as evidências t�
 
 <img width="1907" height="838" alt="Captura de tela 2026-07-29 101844" src="https://github.com/user-attachments/assets/c5aace9d-51fa-41eb-af25-74cc0b1ad298" />
 
+### 🤖 ETAPA 4: Automação Contínua com Script (Cypress + cypress-axe)
+Execução do script de teste automatizado local focado na validação contínua da integridade semântica do código. O motor do Cypress barrou a execução da esteira ao detectar *3 categorias de violações críticas totalizando 6 nós afetados*:
+
+1.  *color-contrast (detectado em 4 nós):* Alerta automatizado que ratifica a ausência de contraste mínimo em elementos textuais da interface.
+    *   Diretriz Violada: WCAG 2.1 — Critério 1.4.3 (Contrast).
+2.  *image-alt (detectado em 1 nó):* Presença de tag de imagem crítica totalmente desprovida de texto alternativo para tecnologias assistivas.
+    *   Diretriz Violada: WCAG 2.1 — Critério 1.1.1 (Non-text Content).
+3.  *scrollable-region-focusable (detectado em 1 nó):* Evidência capturada via DOM Snapshot na seção "Conheça os conteúdos do nosso blog". O contêiner de rolagem lateral (carrossel) não possui propriedade de indexação por teclado (tabindex="0"), impedindo que o usuário navegue ou role o bloco usando as setas direcionais do teclado.
+    *   Diretriz Violada: WCAG 2.1 — Critério 2.1.1 (Keyboard).
+
+### Evidência:
+
+<img width="1823" height="829" alt="Captura de tela 2026-07-29 111453" src="https://github.com/user-attachments/assets/e844ec83-10c8-4de1-9cb8-d3c2ccbd8f93" />
+
 
 ## 💡 4. Diretrizes WCAG & Plano de Correção para a Engenharia
 
-1.  **Interface e Navegação (`CSS/JS`):** 
-    *   Sincronizar os gatilhos de transição e foco para garantir que a janela acompanhe visualmente o elemento ativo selecionado via teclado (correção do bug de scroll).
-    *   Customizar a propriedade CSS `:focus-visible` para fornecer uma borda nítida e espessa, eliminando a camuflagem visual do foco sobre o fundo.
-2.  **Saneamento de Formulários e Captura de Dados (`HTML5`):**
-    *   Remover as 14 ocorrências de rótulos duplicados no HTML para zerar o conflito de leitura no NVDA.
-    *   Garantir que cada um dos 10 campos de formulário mapeados possua exatamente uma tag `<label>` exclusiva vinculada de forma semântica pelo atributo `for` correspondente ao `id` do campo.
-3.  **Ajuste de Acessibilidade Visual e Conteúdo (`Design/Código`):**
-    *   Corrigir a paleta de cores das 12 fontes e links apagados, elevando a taxa de contraste cromático para o mínimo de 4.5:1 exigido pela WCAG.
-    *   Preencher o atributo `alt` descritivo na imagem e no botão identificados como vazios pelo WAVE e Axe.
-4.  **Limpeza da Árvore de Acessibilidade (`ARIA`):**
-    *   Ajustar os blocos estruturais do site, garantindo que nenhum elemento que receba foco via teclado esteja aninhado dentro de contêineres que utilizam a tag `aria-hidden="true"`.
-    *   Corrigir a hierarquia das tags ARIA soltas e validar a grafia dos atributos para que o leitor de tela leia as frases com coerência.
----
+### 1. Interface e Navegação (CSS/JS):
+*   Sincronizar os gatilhos de transição e foco para garantir que a janela acompanhe visualmente o elemento ativo selecionado via teclado (correção do bug de scroll).
+*   Customizar a propriedade CSS `:focus-visible` para fornecer uma borda nítida e espessa, eliminando a camuflagem visual do foco sobre o fundo.
+*   Injetar o atributo `tabindex="0"` no contêiner principal do carrossel do blog (seção "Conheça os conteúdos do nosso blog" mapeada pelo Cypress), garantindo que a região de rolagem lateral seja acessada e controlada pelas setas direcionais do teclado.
 
-### 🤖 ETAPA 5: Automação com (Cypress + `cypress-axe`)
-*   *Seção reservada para a execução do script automatizado de integração contínua (CI/CD) para capturar a quebra sintática da árvore do DOM.*
-*   `[AGUARDANDO CÓDIGO DA EXECUÇÃO DO CYPRESS]`
+### 2. Saneamento de Formulários e Captura de Dados (HTML5):
+*   Remover as 14 ocorrências de rótulos duplicados no HTML para zerar o conflito de leitura no NVDA.
+*   Garantir que cada um dos 10 campos de formulário mapeados possua exatamente uma tag `<label>` exclusiva vinculada de forma semântica pelo atributo `for` correspondente ao `id` do campo.
+
+### 3. Ajuste de Acessibilidade Visual e Conteúdo (Design/Código):
+*   Corrigir a paleta de cores das 12 fontes e links apagados, elevando a taxa de contraste cromático para o mínimo de 4.5:1 exigido pela WCAG.
+*   Preencher o atributo `alt` descritivo na imagem e no botão identificados como vazios pelo WAVE e Axe.
+
+### 4. Limpeza da Árvore de Acessibilidade (ARIA):
+*   Ajustar os blocos estruturais do site, garantindo que nenhum elemento que receba foco via teclado esteja aninhado dentro de contêineres que utilizam a tag `aria-hidden="true"`.
+*   Corrigir a hierarquia das tags ARIA soltas e validar a grafia dos atributos para que o leitor de tela leia as frases com coerência.
+*
+
+
 
 ---
 
