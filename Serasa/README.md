@@ -110,9 +110,5 @@ Execução do script de teste automatizado local focado na validação contínua
 ### 4. Limpeza da Árvore de Acessibilidade (ARIA):
 *   Ajustar os blocos estruturais do site, garantindo que nenhum elemento que receba foco via teclado esteja aninhado dentro de contêineres que utilizam a tag `aria-hidden="true"`.
 *   Corrigir a hierarquia das tags ARIA soltas e validar a grafia dos atributos para que o leitor de tela leia as frases com coerência.
-*
 
-
-
----
 
