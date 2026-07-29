@@ -29,8 +29,7 @@ Testes executados sem o uso de mouse, simulando a navegação de usuários cegos
 
 1.  **Camuflagem Visual do Indicador de Foco:**  Ao navegar com a tecla `Tab`, a borda preta padrão do navegador que
 indica a seleção do elemento se mistura e perde o contraste sobre as cores e detalhes em verde-escuro
-corporativo da marca, exigindo esforço visual para ser localizado
-
+corporativo da marca, exigindo esforço visual para ser localizado.
     *   *Critério WCAG Afetado:* 2.4.13 (Focus Appearance - WCAG 2.2).
       
 3.  **Omissão de Conteúdo e Contratação "No Escuro" (Seção de Cartões):** O foco do teclado cai direto no botão "Solicitar cartão" duas vezes seguidas e pula para "Expandir características". O sistema ignora e não lê o título do cartão (ex: Mastercard Black) e pula todas as vantagens textuais (como Salas VIP). O usuário cego é induzido a contratar um produto sem o sistema ler as especificações.
