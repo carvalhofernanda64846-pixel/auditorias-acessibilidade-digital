@@ -1,0 +1,25 @@
+describe('Automação de Acessibilidade — Portal Serasa Experian', () => {
+  
+  // Impede o Cypress de quebrar o teste por falhas de programação do próprio site da Serasa
+  Cypress.on('uncaught:exception', () => false);
+
+  it('Deve carregar a homepage e escanear a estrutura do HTML contra a WCAG', () => {
+    
+    // 1. Visita o portal oficial e estipula um tempo de segurança para carregamento
+    cy.visit('https://serasa.com.br', {
+      timeout: 90000
+    });
+
+    // 2. Injeta a biblioteca especialista axe-core na árvore do DOM
+    cy.injectAxe();
+
+    // 3. Executa a varredura completa nas regras obrigatórias de nível A e AA
+    cy.checkA11y(null, {
+      runOnly: {
+        type: 'tag',
+        values: ['wcag2a', 'wcag21a', 'wcag2aa', 'wcag21aa']
+      }
+    });
+
+  });
+});
