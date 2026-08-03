@@ -17,7 +17,7 @@ O processo foi estruturado em quatro etapas independentes para isolar e compreen
 
 | Etapa do Teste | Ferramenta Utilizada | Status / Avaliação | Escopo do Mapeamento |
 | :---: | :--- | :--- | :--- |
-| **1** | Teste Manual (Teclado `Tab` + NVDA) | 🔴 Crítico | Loop em carrossel, foco camuflado e omissão de contexto de suporte. |
+| **1** | Teste Manual (Teclado `Tab` + NVDA) | 🔴 Crítico | Loop no carrossel, foco invisível, links de telefones sem identificação do setor e omissão de conteúdo (ignora a descrição das imagens e banners, lendo apenas os botões). |
 | **2** | Extensão WAVE | 🔴 Crítico | **1 Erro Crítico**, **22 Erros de Contraste** e **65 Alertas**. |
 | **3** | Extensão Axe DevTools | 🔴 Crítico | **12 Issues estruturais** globais no HTML da página. |
 | **4** | Automação com **Cypress** | ⏳ Aguardando | Script automatizado para validação contínua da árvore do DOM. |
