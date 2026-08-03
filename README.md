@@ -17,6 +17,7 @@ Este repositório está sendo alimentado diariamente com laudos técnicos práti
 * [📦 Auditoria 09 — Ifood Mobile (Ferramenta Scanner de Acessibilidade do Google (Android) + Leitor de Tela TalkBack (Android Nativo)](/Ifood-Mobile/README.md)
 * [📦 Auditoria 10 — Sicredi (Ferramenta Axe DevTools e WAVE + Automação com Cypress)](./Sicredi/README.md)
 * [📦 Auditoria 11 — Serasa (Ferramenta Axe DevTools e WAVE + Automação com Cypress)](./Serasa/README.md)
+* [📦 Auditoria 12 — Inter (Ferramenta Axe DevTools e WAVE + Automação com Cypress)](./Inter/README.md)
   
   
   
