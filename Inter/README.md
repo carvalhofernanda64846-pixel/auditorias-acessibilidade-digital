@@ -20,7 +20,7 @@ O processo foi estruturado em quatro etapas independentes para isolar e compreen
 | **1** | Teste Manual (Teclado `Tab` + NVDA) | 🔴 Crítico | Loop no carrossel, foco invisível, links de telefones sem identificação do setor e omissão de conteúdo (ignora a descrição das imagens e banners, lendo apenas os botões). |
 | **2** | Extensão WAVE | 🔴 Crítico | **1 Erro Crítico**, **22 Erros de Contraste** e **65 Alertas**. |
 | **3** | Extensão Axe DevTools | 🔴 Crítico | **12 Issues estruturais** globais no HTML da página. |
-| **4** | Automação com **Cypress** | ⏳ Aguardando | Script automatizado para validação contínua da árvore do DOM. |
+| **4** | Automação com Cypress | 🔴 Falha | Script automatizado barrou 2 categorias de erros críticos (Contraste e Idioma) em 7 nós da árvore do DOM. |
 
 ---
 
@@ -47,6 +47,11 @@ A varredura visual de interface identificou não-conformidades de alto impacto n
 *   **65 Alertas de Estrutura (Alerts):** Concentração massiva de redundâncias de links e elementos adjacentes, mapeando o loop de foco do carrossel.
     *   *Diretriz Violada:* WCAG 2.1 — Critério 2.4.4 (Link Purpose).
 
+### Evidência:
+
+<img width="1898" height="845" alt="Captura de tela 2026-08-02 155735" src="https://github.com/user-attachments/assets/67960681-8fae-4d14-b216-3e4804ec1fbd" />
+
+
 ### 📐 ETAPA 3: Inspeção Estrutural de Código (Extensão Axe DevTools)
 O motor do Axe analisou a semântica profunda do HTML e apontou **12 não-conformidades críticas** distribuídas em 3 categorias exatas:
 
@@ -56,19 +61,34 @@ O motor do Axe analisou a semântica profunda do HTML e apontou **12 não-confor
     *   *Diretriz Violada:* WCAG 2.1 — Critério 1.3.1 (Info and Relationships).
 3.  **Ausência de Idioma no Documento Raiz (<html> element must have a lang attribute) — 1 ocorrência:** O site omitiu a declaração do atributo de idioma na tag principal do código, afetando o processamento fonético de leitores de tela globais.
     *   *Diretriz Violada:* WCAG 2.1 — Critério 3.1.1 (Language of Page).
+  
+### Evidência:
+
+<img width="1889" height="842" alt="Captura de tela 2026-08-02 155641" src="https://github.com/user-attachments/assets/5dfcc552-8328-4a76-b583-bf1d8fc0d8e7" />
+
 
 ---
-
 ### 🤖 ETAPA 4: Automação Contínua com Script (Cypress + `cypress-axe`)
-*   *Seção reservada para a execução do script automatizado de integração contínua (CI/CD) para capturar a quebra sintática da árvore do DOM.*
-*   `[AGUARDANDO CÓDIGO DA EXECUÇÃO DO CYPRESS]`
+Execução do script de teste automatizado local focado na validação contínua da integridade semântica do código. O motor do Cypress barrou a execução da esteira ao detectar **2 categorias de violações críticas totalizando 7 nós afetados**:
+
+1.  **`color-contrast` (detectado em 6 nós):** Alerta automatizado que ratifica a ausência de contraste mínimo em elementos textuais da interface, gerando camuflagem visual para pessoas com baixa visão.
+    *   *Diretriz Violada:* WCAG 2.1 — Critério 1.4.3 (Contrast).
+2.  **`html-has-lang` (detectado em 1 nó):** Confirmação em código de que o portal omitiu o atributo de idioma na raiz do documento HTML, impedindo que sintetizadores de voz processem a fonética de maneira correta.
+    *   *Diretriz Violada:* WCAG 2.1 — Critério 3.1.1 (Language of Page).
+
+*   **Impacto de Engenharia:** O script funcionou com sucesso como um Quality Gate (Barreira de Qualidade), impedindo de forma automatizada que códigos inacessíveis avancem para o ambiente de produção.
+
+### Evidência:
+
+<img width="1889" height="835" alt="Captura de tela 2026-08-03 095130" src="https://github.com/user-attachments/assets/6c025db5-5bd1-45e2-afda-cd398d7d8417" />
+
 
 ---
 
 ## 💡 4. Diretrizes WCAG & Plano de Correção para a Engenharia
 
 ### 1. Declaração e Semântica Global (HTML5):
-*   Injetar imediatamente o atributo de idioma correto na tag raiz do código (ex: `<html lang="pt-BR">`) para garantir que os sintetizadores de voz processem a fonética sem sotaques estrangeiros.
+*   **[Ajuste de Automação]** Injetar imediatamente o atributo de idioma correto na tag raiz do código (ex: `<html lang="pt-BR">`) para garantir que os sintetizadores de voz processem a fonética sem sotaques estrangeiros, resolvendo a quebra apontada pelo Cypress.
 *   Corrigir a árvore de componentes ARIA, garantindo que as tags de acessibilidade respeitem os elementos pais obrigatórios exigidos pela especificação W3C.
 
 ### 2. Interface, Navegação e Carrossel (CSS/JS):
@@ -78,7 +98,7 @@ O motor do Axe analisou a semântica profunda do HTML e apontou **12 não-confor
 
 ### 3. Associação de Conteúdo e Canais de Suporte (Código/Acessibilidade):
 *   Vincular os textos informativos dos setores de atendimento (SAC, Ouvidoria) aos links dos seus respectivos números de telefone utilizando o atributo `aria-label` ou `aria-describedby`, impedindo que o teclado anuncie numerais isolados e sem contexto.
-*   Garantir a descrição e a leitura linear das chamadas comerciais de todos os banners antes de direcionar o foco para os botões de ação genéricos.
+*   Garantir a descrição e a leitura linear das chamadas comerciais de todos os banners antes de direcionar o foco para os botões de ação genéricos (evitando a leitura apenas de imagens soltas ou botões vazios).
 
 ### 4. Ajuste de Contraste Visual (Design/CSS):
-*   Corrigir a folha de estilos das 22 ocorrências identificadas pelo WAVE e Axe, elevando a taxa de contraste cromático das fontes e links para o mínimo de 4.5:1.
+*   Corrigir a folha de estilos das 6 ocorrências identificadas pelo Cypress (e 22 do WAVE), elevando a taxa de contraste cromático das fontes e links para o mínimo de 4.5:1 exigido pela WCAG.
