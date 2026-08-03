@@ -2,7 +2,6 @@
 
 ## 🎯 Alvo da Análise: Homepage Institucional e de Serviços — Banco Inter (Web)
 *   **URL Auditada:** `https://inter.co`
-*   **Dispositivo de Teste:** Notebook Acer Aspire (Ambiente Web Windows).
 *   **Padrão de Referência:** WCAG 2.1 / 2.2 (Nível AA) & LBI (Lei nº 13.146/2015).
 
 ---
