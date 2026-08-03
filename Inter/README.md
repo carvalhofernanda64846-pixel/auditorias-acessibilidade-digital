@@ -92,7 +92,7 @@ Execução do script de teste automatizado local focado na validação contínua
 *   Corrigir a árvore de componentes ARIA, garantindo que as tags de acessibilidade respeitem os elementos pais obrigatórios exigidos pela especificação W3C.
 
 ### 2. Interface, Navegação e Carrossel (CSS/JS):
-*   Sanear o componente de carrossel promocional do topo, injetando atributos `aria-label` descritivos nos botões de paginação para substituir o vazamento de termos internos de desenvolvimento (*"Geoto slide"*).
+*   Sanear o componente de carrossel injetando atributos `aria-label` descritivos nos botões de paginação para substituir o vazamento de termos internos de desenvolvimento (*"Geoto slide"*).
 *   Utilizar propriedades ARIA (como `aria-live` e `aria-hidden`) para garantir que apenas o slide visível na tela receba o foco do teclado, destruindo o loop de links e botões repetitivos (*"Conhecer o Wearables"*).
 *   Customizar a propriedade CSS `:focus-visible` em todo o portal para restaurar a borda visual do indicador de seleção sobre fundos claros.
 
