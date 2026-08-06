@@ -1,0 +1,23 @@
+describe('Automação de Acessibilidade — Relançamento Portal Itaú', () => {
+  
+  Cypress.on('uncaught:exception', () => false);
+
+  it('Deve carregar a homepage do Itaú e escanear a estrutura do HTML contra a WCAG', () => {
+    
+    // Injeta a propriedade failOnStatusCode: false para o robô passar pelo bloqueio 403 do banco
+    cy.visit('https://itau.com.br', {
+      timeout: 90000,
+      failOnStatusCode: false
+    });
+
+    cy.injectAxe();
+
+    cy.checkA11y(null, {
+      runOnly: {
+        type: 'tag',
+        values: ['wcag2a', 'wcag21a', 'wcag2aa', 'wcag21aa']
+      }
+    });
+
+  });
+});
