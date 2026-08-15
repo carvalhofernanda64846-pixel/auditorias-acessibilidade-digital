@@ -43,12 +43,22 @@ A varredura visual de interface identificou conformidade na validação sintáti
 *   **23 Alertas de Estrutura (Alerts):** Concentração massiva de **15 Links Redundantes (Redundant links)**. Esse volume corrobora matematicamente o comportamento de loop e confusão identificado nos testes manuais na seção de Serviços, onde o teclado passa por múltiplos links repetitivos que apontam para o mesmo destino.
     *   *Diretriz Violada:* WCAG 2.1 — Critério 2.4.4 (Link Purpose).
 
+### Evidência:
+
+<img width="1890" height="862" alt="Captura de tela 2026-08-15 111940" src="https://github.com/user-attachments/assets/d572fc8b-a4e7-48a9-a386-cc7e206f6b8d" />
+
+
 ### 📐 ETAPA 3: Inspeção Estrutural de Código (Extensão Axe DevTools)
 O motor automatizado do Axe DevTools realizou a varredura profunda nas linhas do código HTML e cravou **0 não-conformidades de código**:
 
 1.  **Conformidade Sintática Estática (Total Issues: 0):** O código fonte estrutural atende aos critérios básicos de validação estática automatizada monitorados pelo motor do Axe, sem apresentar quebras explícitas de tags ou atributos mal formados na árvore visível do DOM.
     *   *Análise Crítica de QA Sênior (O Falso Positivo):** Este resultado consolida o conceito de "Falso Positivo" em testes automáticos. Embora o motor classifique a interface com zero erros, o teste funcional assistivo humano (Etapa 1) comprovou o apagão de conteúdo nas seções centrais. Isso ocorre porque o algoritmo do robô falha ao não conseguir mensurar a ausência total de elementos interativos e o isolamento de blocos de negócios estáticos fora do fluxo de tabulação.
     *   *Diretriz Relacionada:* WCAG 2.1 — Critério 2.1.1 (Keyboard - Princípio da Operabilidade).
+  
+### Evidência:
+
+<img width="1901" height="823" alt="Captura de tela 2026-08-15 112157" src="https://github.com/user-attachments/assets/eb6204ae-9b6b-4604-bfd1-80a323908e2d" />
+
 
 ### 🤖 ETAPA 4: Automação Contínua com Script (Cypress + `cypress-axe`)
 Execução do script de teste automatizado local integrado ao motor do Cypress. O ecossistema de segurança do portal interceptou a execução gerando uma tela de barreira contra bots maliciosos (Desafio de WAF). Contudo, a esteira atuou com sucesso como Quality Gate e barrou o processo ao capturar **1 violação crítica estrutural na página de entrada**:
@@ -56,6 +66,10 @@ Execução do script de teste automatizado local integrado ao motor do Cypress. 
 1.  **`meta-refresh` (detectado em 1 nó):** Presença de tag de atualização automatizada de tempo limite na raiz do HTML da tela de segurança de firewall do banco.
     *   *O Impacto Prático:* O recarregamento forçado e periódico da página de segurança sem o comando do usuário faz com que leitores de tela (NVDA) reiniciem a leitura do zero e percam a posição do foco do teclado. Isso impede que pessoas cegas ou com limitações motoras tenham tempo hábil para decifrar e superar o desafio de segurança, sendo bloqueadas na portaria do site.
     *   *Diretriz Violada:* WCAG 2.1 — Critério 2.2.1 (Tempo Limite Ajustável - Nível A).
+
+### Evidência:
+
+<img width="1820" height="880" alt="Captura de tela 2026-08-15 113245" src="https://github.com/user-attachments/assets/1198a5d3-ebea-47fa-bc30-7eb471ece6ef" />
 
 ---
 
