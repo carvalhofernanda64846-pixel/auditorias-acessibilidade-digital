@@ -1,0 +1,26 @@
+describe('Automação de Acessibilidade — Portal Banco Carrefour', () => {
+  
+  // Impede o Cypress de quebrar o teste por falhas de programação internas do site
+  Cypress.on('uncaught:exception', () => false);
+
+  it('Deve carregar a homepage do Banco Carrefour e escanear a estrutura do HTML contra a WCAG', () => {
+    
+    // 1. Visita o portal oficial com tratamento para o firewall do banco
+    cy.visit('https://carrefoursolucoes.com.br', {
+      timeout: 90000,
+      failOnStatusCode: false
+    });
+
+    // 2. Injeta a biblioteca especialista axe-core na árvore do DOM
+    cy.injectAxe();
+
+    // 3. Executa a varredura completa nas regras de nível A e AA
+    cy.checkA11y(null, {
+      runOnly: {
+        type: 'tag',
+        values: ['wcag2a', 'wcag21a', 'wcag2aa', 'wcag21aa']
+      }
+    });
+
+  });
+});
