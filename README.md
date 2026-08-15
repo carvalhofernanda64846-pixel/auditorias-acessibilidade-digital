@@ -18,6 +18,8 @@ Este repositório está sendo alimentado diariamente com laudos técnicos práti
 * [📦 Auditoria 10 — Sicredi (Ferramenta Axe DevTools, WAVE + Automação com Cypress)](./Sicredi/README.md)
 * [📦 Auditoria 11 — Serasa (Ferramenta Axe DevTools, WAVE + Automação com Cypress)](./Serasa/README.md)
 * [📦 Auditoria 12 — Inter (Ferramenta Axe DevTools, WAVE + Automação com Cypress)](./Inter/README.md)
+* [📦 Auditoria 13 — Banco Carrefour (Ferramenta Axe DevTools, WAVE + Automação com Cypress)](./Banco%20Carrefour/README.md)
+  
   
   
   
