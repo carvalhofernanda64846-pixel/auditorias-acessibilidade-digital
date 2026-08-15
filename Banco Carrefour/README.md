@@ -85,4 +85,4 @@ Execução do script de teste automatizado local integrado ao motor do Cypress. 
 ### 3. Tratamento de Imagens e Componentes de Conversão (ARIA):
 *   Corrigir os atributos textuais alternativos (tags `alt`) nas imagens promocionais da seção "Nossos Serviços". Substituir os termos técnicos e vazamentos de arquivos (ex: *"seguros gráfico link"*) por descrições humanas funcionais (ex: `alt="Mulher sorrindo segurando notas de dinheiro, representando o serviço de empréstimo fácil"`).
 *   Saneá-los para evitar links repetitivos redundantes apontando para o mesmo nó de destino, eliminando os 15 alertas mapeados pelo WAVE.
-*
+
