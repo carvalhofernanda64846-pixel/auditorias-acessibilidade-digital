@@ -2,8 +2,7 @@
 
 ## 🎯 Alvo da Análise: Homepage Institucional e Desafio de Segurança — Banco Carrefour
 *   **URL Auditada:** `https://carrefoursolucoes.com.br`
-*   **Dispositivo de Teste:** Notebook Acer Aspire (Ambiente Web Windows).
-*   **Padrão de Referência:** WCAG 2.1 (Nível AA) & LBI (Lei nº 13.146/2015).
+*   **Padrão de Referência:** WCAG 2.1/2.2 (Nível AA) & LBI (Lei nº 13.146/2015).
 
 ---
 
